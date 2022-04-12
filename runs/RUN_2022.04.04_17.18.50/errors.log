@@ -1,0 +1,15 @@
+[ERROR]: during executing openroad script /openlane/scripts/openroad/resizer.tcl
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+[INFO DPL-0035]  _7268_
+[INFO DPL-0035]  _7277_
+[INFO DPL-0035]  _7277_
+[INFO DPL-0035]  _7289_
+[INFO DPL-0035]  _7289_
+[INFO DPL-0035]  _7289_
+[INFO DPL-0035] message limit reached, this message will no longer print
+[ERROR DPL-0036] Detailed placement failed.
+Error: resizer.tcl, 79 DPL-0036
+child process exited abnormally
+
+[ERROR]: Flow failed.

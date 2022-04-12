@@ -1,0 +1,33 @@
+[INFO]: Current run directory is /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_16.55.37
+[INFO]: Preparing LEF Files...
+[INFO]: Running Synthesis...
+[ERROR]: during executing: "yosys -c /openlane/scripts/yosys/synth.tcl -l /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_16.55.37/logs/synthesis/1-synthesis.log |& tee /dev/null"
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+ Yosys 0.12+45 (git sha1 UNKNOWN, gcc 8.3.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+[ERROR] Misformatted SYNTH_STRATEGY ("2").
+[ERROR] Correct format is "DELAY|AREA 0-4|0-3".
+child process exited abnormally
+
+[INFO]: Generating Final Summary Report...
+[INFO]: Design Name: MULTI_32bit
+Run Directory: /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_16.55.37
+Source not found.
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_16.55.37/logs/finishing/MULTI_32bit.lvs.lef.log
+Source not found.
+----------------------------------------
+
+Antenna Summary:
+No antenna report found.
+[INFO]: check full report here: /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_16.55.37/reports/final_summary_report.csv
+[INFO]: Saving runtime environment...
+[ERROR]: Flow failed.

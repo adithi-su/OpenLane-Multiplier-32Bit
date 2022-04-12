@@ -1,0 +1,38 @@
+Mon Apr 04 17:20:39 UTC 2022 - Executing "/openlane/scripts/mergeLef.py -i /home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef /home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -o /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/merged_unpadded.lef |& tee /dev/null"
+
+Mon Apr 04 17:20:39 UTC 2022 - Executing "openroad -python /openlane/scripts/mergeLib.py --output /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/synthesis/merged.lib --name sky130A_merged /home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Mon Apr 04 17:20:39 UTC 2022 - Executing "openroad -python /openlane/scripts/libtrim.py --cell-file /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/synthesis/trimmed.lib.exclude.list --output /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/synthesis/trimmed.lib /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/synthesis/merged.lib"
+
+Mon Apr 04 17:20:40 UTC 2022 - Executing "echo {openlane 00da77e58c86a2fa745dafc2f4b277191cb8d3ac} > /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/OPENLANE_VERSION"
+
+Mon Apr 04 17:20:40 UTC 2022 - Executing "openroad -python /openlane/scripts/new_tracks.py -i /home/adithi/OpenLane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/routing/config.tracks"
+
+Mon Apr 04 17:20:40 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Mon Apr 04 17:20:40 UTC 2022 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl -l /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/logs/synthesis/1-synthesis.log |& tee /dev/null"
+
+Mon Apr 04 17:20:55 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.04_17.20.38\/results\/synthesis\/MULTI_32bit.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/config.tcl"
+
+Mon Apr 04 17:20:55 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/config.tcl"
+
+Mon Apr 04 17:20:55 UTC 2022 - Executing "sed -i /defparam/d /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/results/synthesis/MULTI_32bit.v"
+
+Mon Apr 04 17:20:55 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta.tcl"
+
+Mon Apr 04 17:20:57 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/floorplan.tcl"
+
+Mon Apr 04 17:20:58 UTC 2022 - Executing "openroad -python /openlane/scripts/defutil.py extract_core_dims --output-data /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/dimensions.txt --input-lef /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/merged.lef /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/floorplan/3-initial_fp.def"
+
+Mon Apr 04 17:20:58 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/ioplacer.tcl"
+
+Mon Apr 04 17:20:58 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/tapcell.tcl"
+
+Mon Apr 04 17:20:59 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/pdn.tcl"
+
+Mon Apr 04 17:21:00 UTC 2022 - Executing "openroad -python /openlane/scripts/random_place.py --lef /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/merged_unpadded.lef --input-def /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/floorplan/6-pdn.def --output-def /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/placement/7-global.def |& tee /dev/null /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/logs/placement/7-global.log"
+
+Mon Apr 04 17:21:01 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/resizer.tcl"
+
+Mon Apr 04 17:21:35 UTC 2022 - Executing "openroad -python /openlane/scripts/generate_reports.py -d /openlane/designs/MULTI_32bit --design_name MULTI_32bit --tag RUN_2022.04.04_17.20.38 --output_file /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/reports/final_summary_report.csv --man_report /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/reports/manufacturability_report.rpt --run_path /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38"
+

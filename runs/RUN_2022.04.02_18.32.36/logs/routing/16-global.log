@@ -1,0 +1,3822 @@
+OpenROAD 944855835623e651e7b9c7c50efcce1fb04b4fee 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/MULTI_32bit/runs/RUN_2022.04.02_18.32.36/tmp/merged_unpadded.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/MULTI_32bit/runs/RUN_2022.04.02_18.32.36/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/MULTI_32bit/runs/RUN_2022.04.02_18.32.36/tmp/cts/13-resizer_timing.def
+[INFO ODB-0128] Design: MULTI_32bit
+[INFO ODB-0130]     Created 100 pins.
+[INFO ODB-0131]     Created 6240 components and 39151 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 22584 connections.
+[INFO ODB-0133]     Created 4906 nets and 16567 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/MULTI_32bit/runs/RUN_2022.04.02_18.32.36/tmp/cts/13-resizer_timing.def
+###############################################################################
+# Created by write_sdc
+# Sat Apr  2 18:33:38 2022
+###############################################################################
+current_design MULTI_32bit
+###############################################################################
+# Timing Constraints
+###############################################################################
+create_clock -name clk -period 10.0000 [get_ports {clk}]
+set_clock_transition 0.1500 [get_clocks {clk}]
+set_clock_uncertainty 0.2500 clk
+set_propagated_clock [get_clocks {clk}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[0]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[10]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[11]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[12]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[13]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[14]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[15]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[16]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[17]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[18]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[19]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[1]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[20]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[21]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[22]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[23]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[24]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[25]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[26]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[27]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[28]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[29]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[2]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[30]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[31]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[3]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[4]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[5]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[6]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[7]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[8]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[9]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[0]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[10]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[11]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[12]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[13]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[14]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[15]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[16]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[17]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[18]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[19]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[1]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[20]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[21]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[22]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[23]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[24]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[25]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[26]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[27]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[28]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[29]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[2]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[30]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[31]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[3]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[4]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[5]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[6]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[7]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[8]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[9]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {rst}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[0]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[10]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[11]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[12]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[13]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[14]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[15]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[16]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[17]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[18]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[19]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[1]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[20]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[21]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[22]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[23]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[24]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[25]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[26]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[27]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[28]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[29]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[2]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[30]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[31]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[3]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[4]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[5]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[6]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[7]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[8]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[9]}]
+###############################################################################
+# Environment
+###############################################################################
+set_load -pin_load 0.0334 [get_ports {F[31]}]
+set_load -pin_load 0.0334 [get_ports {F[30]}]
+set_load -pin_load 0.0334 [get_ports {F[29]}]
+set_load -pin_load 0.0334 [get_ports {F[28]}]
+set_load -pin_load 0.0334 [get_ports {F[27]}]
+set_load -pin_load 0.0334 [get_ports {F[26]}]
+set_load -pin_load 0.0334 [get_ports {F[25]}]
+set_load -pin_load 0.0334 [get_ports {F[24]}]
+set_load -pin_load 0.0334 [get_ports {F[23]}]
+set_load -pin_load 0.0334 [get_ports {F[22]}]
+set_load -pin_load 0.0334 [get_ports {F[21]}]
+set_load -pin_load 0.0334 [get_ports {F[20]}]
+set_load -pin_load 0.0334 [get_ports {F[19]}]
+set_load -pin_load 0.0334 [get_ports {F[18]}]
+set_load -pin_load 0.0334 [get_ports {F[17]}]
+set_load -pin_load 0.0334 [get_ports {F[16]}]
+set_load -pin_load 0.0334 [get_ports {F[15]}]
+set_load -pin_load 0.0334 [get_ports {F[14]}]
+set_load -pin_load 0.0334 [get_ports {F[13]}]
+set_load -pin_load 0.0334 [get_ports {F[12]}]
+set_load -pin_load 0.0334 [get_ports {F[11]}]
+set_load -pin_load 0.0334 [get_ports {F[10]}]
+set_load -pin_load 0.0334 [get_ports {F[9]}]
+set_load -pin_load 0.0334 [get_ports {F[8]}]
+set_load -pin_load 0.0334 [get_ports {F[7]}]
+set_load -pin_load 0.0334 [get_ports {F[6]}]
+set_load -pin_load 0.0334 [get_ports {F[5]}]
+set_load -pin_load 0.0334 [get_ports {F[4]}]
+set_load -pin_load 0.0334 [get_ports {F[3]}]
+set_load -pin_load 0.0334 [get_ports {F[2]}]
+set_load -pin_load 0.0334 [get_ports {F[1]}]
+set_load -pin_load 0.0334 [get_ports {F[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {clk}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {rst}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[31]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[30]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[29]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[28]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[27]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[26]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[25]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[24]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[23]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[22]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[21]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[20]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[19]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[18]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[17]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[16]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[15]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[14]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[13]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[12]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[11]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[10]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[9]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[8]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[7]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[6]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[5]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[4]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[31]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[30]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[29]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[28]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[27]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[26]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[25]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[24]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[23]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[22]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[21]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[20]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[19]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[18]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[17]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[16]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[15]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[14]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[13]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[12]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[11]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[10]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[9]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[8]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[7]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[6]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[5]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[4]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[0]}]
+set_timing_derate -early 0.9500
+set_timing_derate -late 1.0500
+###############################################################################
+# Design Rules
+###############################################################################
+set_max_fanout 5.0000 [current_design]
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[WARNING GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 32 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 20
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 2776
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal      38700         19814          48.80%
+met2       Vertical        29025         19492          32.84%
+met3       Horizontal      19350         13398          30.76%
+met4       Vertical        11610          7752          33.23%
+met5       Horizontal       3870          1890          51.16%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0197] Via related to pin nodes: 22985
+[INFO GRT-0198] Via related Steiner nodes: 552
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 26651
+[INFO GRT-0112] Final usage 3D: 105976
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1             19814         10134           51.15%             0 /  0 /  0
+met2             19492         11140           57.15%             0 /  0 /  0
+met3             13398          2532           18.90%             0 /  0 /  0
+met4              7752          2096           27.04%             0 /  0 /  0
+met5              1890           121            6.40%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            62346         26023           41.74%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 270052 um
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[WARNING GRT-0043] No OR_DEFAULT vias defined.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 341  _0113_
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 1598  _1370_
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 1621  _1393_
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 1840  _1612_
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 2761  _2533_
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 2986  _2758_
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 3653  _3425_
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 3844  _3616_
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 6 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+[INFO GRT-0012] Antenna violations: 27
+[WARNING GRT-0054] Placement of diode ANTENNA_42 will be legalized by detailed placement.
+[INFO GRT-0015] 52 diodes inserted.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 20
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 2776
+[INFO GRT-0009] rerouting 3876 nets.
+[INFO GRT-0006] Repairing antennas, iteration 2.
+[WARNING GRT-0043] No OR_DEFAULT vias defined.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 1598  _1370_
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 2761  _2533_
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+[INFO GRT-0012] Antenna violations: 8
+[INFO GRT-0015] 63 diodes inserted.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 10
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 2776
+[INFO GRT-0009] rerouting 36 nets.
+[INFO GRT-0006] Repairing antennas, iteration 3.
+[WARNING GRT-0043] No OR_DEFAULT vias defined.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 1598  _1370_
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: 
+disconnected net 2761  _2533_
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 3 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 2 T shapes.
+Notice 0: Split top of 1 T shapes.
+Notice 0: Split top of 1 T shapes.
+[INFO GRT-0012] Antenna violations: 0
+[INFO GRT-0014] Routed nets: 4905
+[INFO]: Setting RC values...
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+Startpoint: _9216_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _9121_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.14    0.14 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.14 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.17    0.31 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.31 ^ clkbuf_1_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.14    0.17    0.47 ^ clkbuf_1_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_1_0_clk (net)
+                  0.14    0.00    0.47 ^ clkbuf_2_3_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.09    0.16    0.63 ^ clkbuf_2_3_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_2_3_0_clk (net)
+                  0.09    0.00    0.64 ^ clkbuf_3_7_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.10    0.15    0.79 ^ clkbuf_3_7_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_3_7_0_clk (net)
+                  0.10    0.00    0.79 ^ clkbuf_4_14_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.29    0.28    1.07 ^ clkbuf_4_14_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     9    0.05                           clknet_4_14_0_clk (net)
+                  0.29    0.00    1.08 ^ _9216_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.02    0.36    1.44 v _9216_/Q (sky130_fd_sc_hd__dfxtp_2)
+     1    0.00                           P1[55] (net)
+                  0.02    0.00    1.44 v hold16/A (sky130_fd_sc_hd__buf_2)
+                  0.08    0.16    1.60 v hold16/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           net112 (net)
+                  0.08    0.00    1.60 v _9121_/D (sky130_fd_sc_hd__dfxtp_2)
+                                  1.60   data arrival time
+
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.15    0.15 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.15 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.19    0.34 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.34 ^ clkbuf_1_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.19    0.54 ^ clkbuf_1_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_0_0_clk (net)
+                  0.16    0.00    0.54 ^ clkbuf_2_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.18    0.72 ^ clkbuf_2_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_2_0_0_clk (net)
+                  0.08    0.00    0.72 ^ clkbuf_3_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.17    0.89 ^ clkbuf_3_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_3_1_0_clk (net)
+                  0.11    0.00    0.89 ^ clkbuf_4_2_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.34    0.35    1.24 ^ clkbuf_4_2_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     7    0.06                           clknet_4_2_0_clk (net)
+                  0.34    0.00    1.24 ^ _9121_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                          0.25    1.49   clock uncertainty
+                         -0.03    1.46   clock reconvergence pessimism
+                          0.00    1.46   library hold time
+                                  1.46   data required time
+-----------------------------------------------------------------------------
+                                  1.46   data required time
+                                 -1.60   data arrival time
+-----------------------------------------------------------------------------
+                                  0.13   slack (MET)
+
+
+Startpoint: _9191_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _9119_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.14    0.14 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.14 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.17    0.31 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.31 ^ clkbuf_1_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.14    0.17    0.47 ^ clkbuf_1_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_1_0_clk (net)
+                  0.14    0.00    0.47 ^ clkbuf_2_3_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.09    0.16    0.63 ^ clkbuf_2_3_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_2_3_0_clk (net)
+                  0.09    0.00    0.64 ^ clkbuf_3_7_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.10    0.15    0.79 ^ clkbuf_3_7_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_3_7_0_clk (net)
+                  0.10    0.00    0.79 ^ clkbuf_4_14_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.29    0.28    1.07 ^ clkbuf_4_14_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     9    0.05                           clknet_4_14_0_clk (net)
+                  0.29    0.00    1.08 ^ _9191_/CLK (sky130_fd_sc_hd__dfxtp_4)
+                  0.08    0.44    1.51 v _9191_/Q (sky130_fd_sc_hd__dfxtp_4)
+     3    0.05                           P1[30] (net)
+                  0.08    0.01    1.52 v _9119_/D (sky130_fd_sc_hd__dfxtp_1)
+                                  1.52   data arrival time
+
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.15    0.15 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.15 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.19    0.34 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.34 ^ clkbuf_1_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.19    0.54 ^ clkbuf_1_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_0_0_clk (net)
+                  0.16    0.00    0.54 ^ clkbuf_2_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.18    0.72 ^ clkbuf_2_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_2_0_0_clk (net)
+                  0.08    0.00    0.72 ^ clkbuf_3_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.17    0.89 ^ clkbuf_3_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_3_1_0_clk (net)
+                  0.11    0.00    0.89 ^ clkbuf_4_3_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.25    0.29    1.17 ^ clkbuf_4_3_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    10    0.05                           clknet_4_3_0_clk (net)
+                  0.25    0.00    1.18 ^ _9119_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                          0.25    1.43   clock uncertainty
+                         -0.03    1.39   clock reconvergence pessimism
+                         -0.02    1.37   library hold time
+                                  1.37   data required time
+-----------------------------------------------------------------------------
+                                  1.37   data required time
+                                 -1.52   data arrival time
+-----------------------------------------------------------------------------
+                                  0.15   slack (MET)
+
+
+Startpoint: _9224_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _9160_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.14    0.14 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.14 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.17    0.31 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.31 ^ clkbuf_1_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.14    0.17    0.47 ^ clkbuf_1_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_1_0_clk (net)
+                  0.14    0.00    0.47 ^ clkbuf_2_2_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.18    0.65 ^ clkbuf_2_2_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_2_2_0_clk (net)
+                  0.11    0.00    0.65 ^ clkbuf_3_5_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.07    0.14    0.80 ^ clkbuf_3_5_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_5_0_clk (net)
+                  0.07    0.00    0.80 ^ clkbuf_4_11_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.22    0.23    1.02 ^ clkbuf_4_11_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     9    0.04                           clknet_4_11_0_clk (net)
+                  0.22    0.00    1.03 ^ _9224_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                  0.03    0.34    1.36 v _9224_/Q (sky130_fd_sc_hd__dfxtp_1)
+     1    0.00                           P3[0] (net)
+                  0.03    0.00    1.36 v hold2/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.03    0.09    1.46 v hold2/X (sky130_fd_sc_hd__clkbuf_2)
+     1    0.00                           net98 (net)
+                  0.03    0.00    1.46 v hold15/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.14    1.59 v hold15/X (sky130_fd_sc_hd__clkbuf_2)
+     1    0.02                           net111 (net)
+                  0.08    0.00    1.59 v _9160_/D (sky130_fd_sc_hd__dfxtp_1)
+                                  1.59   data arrival time
+
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.15    0.15 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.15 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.19    0.34 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.34 ^ clkbuf_1_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.14    0.18    0.52 ^ clkbuf_1_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_1_0_clk (net)
+                  0.14    0.00    0.52 ^ clkbuf_2_3_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.09    0.18    0.70 ^ clkbuf_2_3_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_2_3_0_clk (net)
+                  0.09    0.00    0.70 ^ clkbuf_3_7_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.10    0.17    0.87 ^ clkbuf_3_7_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_3_7_0_clk (net)
+                  0.10    0.00    0.87 ^ clkbuf_4_14_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.29    0.31    1.19 ^ clkbuf_4_14_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     9    0.05                           clknet_4_14_0_clk (net)
+                  0.29    0.00    1.19 ^ _9160_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                          0.25    1.44   clock uncertainty
+                         -0.05    1.39   clock reconvergence pessimism
+                         -0.01    1.37   library hold time
+                                  1.37   data required time
+-----------------------------------------------------------------------------
+                                  1.37   data required time
+                                 -1.59   data arrival time
+-----------------------------------------------------------------------------
+                                  0.22   slack (MET)
+
+
+Startpoint: _9067_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _9129_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.14    0.14 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.14 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.17    0.31 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.31 ^ clkbuf_1_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.18    0.49 ^ clkbuf_1_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_0_0_clk (net)
+                  0.16    0.00    0.49 ^ clkbuf_2_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16    0.65 ^ clkbuf_2_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_2_0_0_clk (net)
+                  0.08    0.00    0.65 ^ clkbuf_3_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.06    0.12    0.77 ^ clkbuf_3_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_0_0_clk (net)
+                  0.06    0.00    0.77 ^ clkbuf_4_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.26    0.24    1.01 ^ clkbuf_4_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    10    0.05                           clknet_4_0_0_clk (net)
+                  0.26    0.00    1.01 ^ _9067_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                  0.06    0.36    1.37 ^ _9067_/Q (sky130_fd_sc_hd__dfxtp_1)
+     1    0.00                           P2[1] (net)
+                  0.06    0.00    1.37 ^ _5198_/A0 (sky130_fd_sc_hd__mux2_1)
+                  0.11    0.16    1.54 ^ _5198_/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           _4392_ (net)
+                  0.11    0.00    1.54 ^ _5199_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.05    0.09    1.63 ^ _5199_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           _0000_ (net)
+                  0.05    0.00    1.63 ^ _9129_/D (sky130_fd_sc_hd__dfxtp_1)
+                                  1.63   data arrival time
+
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.15    0.15 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.15 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.19    0.34 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.34 ^ clkbuf_1_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.19    0.54 ^ clkbuf_1_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_0_0_clk (net)
+                  0.16    0.00    0.54 ^ clkbuf_2_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.20    0.74 ^ clkbuf_2_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_2_1_0_clk (net)
+                  0.11    0.00    0.74 ^ clkbuf_3_2_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16    0.90 ^ clkbuf_3_2_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_2_0_clk (net)
+                  0.08    0.00    0.90 ^ clkbuf_4_4_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.20    0.24    1.14 ^ clkbuf_4_4_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     8    0.04                           clknet_4_4_0_clk (net)
+                  0.20    0.00    1.14 ^ _9129_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                          0.25    1.39   clock uncertainty
+                         -0.05    1.34   clock reconvergence pessimism
+                         -0.01    1.33   library hold time
+                                  1.33   data required time
+-----------------------------------------------------------------------------
+                                  1.33   data required time
+                                 -1.63   data arrival time
+-----------------------------------------------------------------------------
+                                  0.30   slack (MET)
+
+
+Startpoint: _9188_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _9116_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.14    0.14 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.14 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.17    0.31 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.31 ^ clkbuf_1_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.18    0.49 ^ clkbuf_1_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_0_0_clk (net)
+                  0.16    0.00    0.49 ^ clkbuf_2_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.18    0.67 ^ clkbuf_2_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_2_1_0_clk (net)
+                  0.11    0.00    0.67 ^ clkbuf_3_3_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.07    0.14    0.81 ^ clkbuf_3_3_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_3_0_clk (net)
+                  0.07    0.00    0.81 ^ clkbuf_4_7_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.19    0.21    1.01 ^ clkbuf_4_7_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     6    0.03                           clknet_4_7_0_clk (net)
+                  0.19    0.00    1.01 ^ _9188_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                  0.03    0.33    1.34 v _9188_/Q (sky130_fd_sc_hd__dfxtp_1)
+     1    0.00                           P1[27] (net)
+                  0.03    0.00    1.34 v hold4/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                  0.05    0.23    1.57 v hold4/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+     1    0.00                           net100 (net)
+                  0.05    0.00    1.57 v _9116_/D (sky130_fd_sc_hd__dfxtp_2)
+                                  1.57   data arrival time
+
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.15    0.15 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.15 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.19    0.34 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.34 ^ clkbuf_1_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.19    0.54 ^ clkbuf_1_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_0_0_clk (net)
+                  0.16    0.00    0.54 ^ clkbuf_2_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.20    0.74 ^ clkbuf_2_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_2_1_0_clk (net)
+                  0.11    0.00    0.74 ^ clkbuf_3_3_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.07    0.16    0.89 ^ clkbuf_3_3_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_3_0_clk (net)
+                  0.07    0.00    0.89 ^ clkbuf_4_6_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.18    0.22    1.11 ^ clkbuf_4_6_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     4    0.03                           clknet_4_6_0_clk (net)
+                  0.18    0.00    1.11 ^ _9116_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                          0.25    1.36   clock uncertainty
+                         -0.08    1.28   clock reconvergence pessimism
+                         -0.02    1.26   library hold time
+                                  1.26   data required time
+-----------------------------------------------------------------------------
+                                  1.26   data required time
+                                 -1.57   data arrival time
+-----------------------------------------------------------------------------
+                                  0.31   slack (MET)
+
+
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+Startpoint: _9195_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _9111_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.15    0.15 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.15 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.19    0.34 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.34 ^ clkbuf_1_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.14    0.18    0.52 ^ clkbuf_1_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_1_0_clk (net)
+                  0.14    0.00    0.52 ^ clkbuf_2_2_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.20    0.72 ^ clkbuf_2_2_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_2_2_0_clk (net)
+                  0.11    0.00    0.72 ^ clkbuf_3_5_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.07    0.16    0.88 ^ clkbuf_3_5_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_5_0_clk (net)
+                  0.07    0.00    0.88 ^ clkbuf_4_10_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.28    0.30    1.18 ^ clkbuf_4_10_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    13    0.05                           clknet_4_10_0_clk (net)
+                  0.28    0.00    1.18 ^ _9195_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.06    0.44    1.61 v _9195_/Q (sky130_fd_sc_hd__dfxtp_2)
+     2    0.02                           P1[34] (net)
+                  0.06    0.00    1.62 v _5806_/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16    1.78 v _5806_/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.02                           _0522_ (net)
+                  0.08    0.00    1.78 v _5807_/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.08    0.21    1.99 v _5807_/X (sky130_fd_sc_hd__clkbuf_4)
+     5    0.03                           _0523_ (net)
+                  0.08    0.00    1.99 v _5810_/A1 (sky130_fd_sc_hd__a22o_1)
+                  0.06    0.25    2.23 v _5810_/X (sky130_fd_sc_hd__a22o_1)
+     2    0.01                           _0526_ (net)
+                  0.06    0.00    2.23 v _5857_/A3 (sky130_fd_sc_hd__a32o_1)
+                  0.07    0.30    2.54 v _5857_/X (sky130_fd_sc_hd__a32o_1)
+     2    0.01                           _0573_ (net)
+                  0.07    0.00    2.54 v _5858_/C (sky130_fd_sc_hd__and3_1)
+                  0.06    0.23    2.76 v _5858_/X (sky130_fd_sc_hd__and3_1)
+     2    0.01                           _0574_ (net)
+                  0.06    0.00    2.76 v _5860_/A_N (sky130_fd_sc_hd__and2b_1)
+                  0.10    0.25    3.01 ^ _5860_/X (sky130_fd_sc_hd__and2b_1)
+     1    0.01                           _0576_ (net)
+                  0.10    0.00    3.01 ^ _5861_/B (sky130_fd_sc_hd__xor2_2)
+                  0.09    0.11    3.12 v _5861_/X (sky130_fd_sc_hd__xor2_2)
+     2    0.01                           _0577_ (net)
+                  0.09    0.00    3.12 v _5863_/A (sky130_fd_sc_hd__or3_1)
+                  0.10    0.44    3.57 v _5863_/X (sky130_fd_sc_hd__or3_1)
+     2    0.01                           _0579_ (net)
+                  0.10    0.00    3.57 v _5898_/B (sky130_fd_sc_hd__and3b_1)
+                  0.08    0.24    3.80 v _5898_/X (sky130_fd_sc_hd__and3b_1)
+     2    0.01                           _0614_ (net)
+                  0.08    0.00    3.80 v _5931_/A2 (sky130_fd_sc_hd__o211ai_4)
+                  0.23    0.25    4.05 ^ _5931_/Y (sky130_fd_sc_hd__o211ai_4)
+     5    0.02                           _0647_ (net)
+                  0.23    0.00    4.05 ^ _5934_/C_N (sky130_fd_sc_hd__or4bb_4)
+                  0.10    0.62    4.67 v _5934_/X (sky130_fd_sc_hd__or4bb_4)
+     5    0.01                           _0650_ (net)
+                  0.10    0.00    4.67 v _6047_/A (sky130_fd_sc_hd__or4_1)
+                  0.10    0.59    5.26 v _6047_/X (sky130_fd_sc_hd__or4_1)
+     2    0.01                           _0761_ (net)
+                  0.10    0.00    5.26 v _6048_/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.10    0.23    5.50 v _6048_/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     5    0.02                           _0762_ (net)
+                  0.10    0.00    5.50 v _6049_/D (sky130_fd_sc_hd__and4bb_1)
+                  0.06    0.26    5.75 v _6049_/X (sky130_fd_sc_hd__and4bb_1)
+     2    0.01                           _0763_ (net)
+                  0.06    0.00    5.75 v _6129_/D1 (sky130_fd_sc_hd__a2111o_1)
+                  0.09    0.34    6.09 v _6129_/X (sky130_fd_sc_hd__a2111o_1)
+     2    0.01                           _0841_ (net)
+                  0.09    0.00    6.09 v _6217_/A1 (sky130_fd_sc_hd__a21o_1)
+                  0.08    0.23    6.31 v _6217_/X (sky130_fd_sc_hd__a21o_1)
+     4    0.01                           _0929_ (net)
+                  0.08    0.00    6.31 v _6384_/A2 (sky130_fd_sc_hd__a311oi_2)
+                  0.29    0.34    6.65 ^ _6384_/Y (sky130_fd_sc_hd__a311oi_2)
+     2    0.01                           _1108_ (net)
+                  0.29    0.00    6.65 ^ _6477_/A1 (sky130_fd_sc_hd__o21ai_1)
+                  0.13    0.20    6.85 v _6477_/Y (sky130_fd_sc_hd__o21ai_1)
+     3    0.01                           _1210_ (net)
+                  0.13    0.00    6.85 v _6559_/A1 (sky130_fd_sc_hd__a21oi_2)
+                  0.16    0.21    7.06 ^ _6559_/Y (sky130_fd_sc_hd__a21oi_2)
+     3    0.01                           _1299_ (net)
+                  0.16    0.00    7.06 ^ _6650_/A1 (sky130_fd_sc_hd__o21ai_1)
+                  0.14    0.16    7.23 v _6650_/Y (sky130_fd_sc_hd__o21ai_1)
+     3    0.01                           _1398_ (net)
+                  0.14    0.00    7.23 v _7067_/A2 (sky130_fd_sc_hd__a211o_1)
+                  0.08    0.38    7.61 v _7067_/X (sky130_fd_sc_hd__a211o_1)
+     2    0.01                           _1852_ (net)
+                  0.08    0.00    7.61 v _7554_/A1 (sky130_fd_sc_hd__a311o_2)
+                  0.09    0.40    8.01 v _7554_/X (sky130_fd_sc_hd__a311o_2)
+     2    0.02                           _2384_ (net)
+                  0.09    0.00    8.01 v _7676_/A2 (sky130_fd_sc_hd__a21oi_4)
+                  0.26    0.30    8.31 ^ _7676_/Y (sky130_fd_sc_hd__a21oi_4)
+     4    0.03                           _2518_ (net)
+                  0.26    0.00    8.31 ^ _8023_/A2 (sky130_fd_sc_hd__o311ai_4)
+                  0.13    0.18    8.49 v _8023_/Y (sky130_fd_sc_hd__o311ai_4)
+     3    0.02                           _2895_ (net)
+                  0.13    0.00    8.49 v _8127_/A2 (sky130_fd_sc_hd__a311oi_4)
+                  0.37    0.43    8.92 ^ _8127_/Y (sky130_fd_sc_hd__a311oi_4)
+     4    0.02                           _3009_ (net)
+                  0.37    0.00    8.92 ^ _8428_/A2 (sky130_fd_sc_hd__o311ai_4)
+                  0.11    0.16    9.08 v _8428_/Y (sky130_fd_sc_hd__o311ai_4)
+     3    0.01                           _3336_ (net)
+                  0.11    0.00    9.08 v _8650_/A1 (sky130_fd_sc_hd__a2111o_1)
+                  0.12    0.48    9.56 v _8650_/X (sky130_fd_sc_hd__a2111o_1)
+     3    0.02                           _3577_ (net)
+                  0.12    0.00    9.56 v _8774_/A1 (sky130_fd_sc_hd__a22oi_4)
+                  0.25    0.30    9.86 ^ _8774_/Y (sky130_fd_sc_hd__a22oi_4)
+     4    0.03                           _3712_ (net)
+                  0.25    0.00    9.86 ^ _8971_/A1 (sky130_fd_sc_hd__a31oi_4)
+                  0.12    0.16   10.02 v _8971_/Y (sky130_fd_sc_hd__a31oi_4)
+     3    0.02                           _3924_ (net)
+                  0.12    0.00   10.02 v _9021_/A2 (sky130_fd_sc_hd__o41a_1)
+                  0.12    0.52   10.54 v _9021_/X (sky130_fd_sc_hd__o41a_1)
+     3    0.01                           _3976_ (net)
+                  0.12    0.00   10.54 v _9048_/A2 (sky130_fd_sc_hd__o31ai_2)
+                  0.29    0.34   10.88 ^ _9048_/Y (sky130_fd_sc_hd__o31ai_2)
+     2    0.01                           _4004_ (net)
+                  0.29    0.00   10.88 ^ _9049_/B (sky130_fd_sc_hd__xor2_1)
+                  0.18    0.23   11.11 ^ _9049_/X (sky130_fd_sc_hd__xor2_1)
+     1    0.01                           _0074_ (net)
+                  0.18    0.00   11.11 ^ _9111_/D (sky130_fd_sc_hd__dfxtp_2)
+                                 11.11   data arrival time
+
+                         10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock source latency
+                  0.21    0.14   10.14 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00   10.14 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.17   10.31 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00   10.31 ^ clkbuf_1_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.18   10.49 ^ clkbuf_1_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_0_0_clk (net)
+                  0.16    0.00   10.49 ^ clkbuf_2_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16   10.65 ^ clkbuf_2_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_2_0_0_clk (net)
+                  0.08    0.00   10.65 ^ clkbuf_3_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.06    0.12   10.77 ^ clkbuf_3_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_0_0_clk (net)
+                  0.06    0.00   10.77 ^ clkbuf_4_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.27    0.25   11.02 ^ clkbuf_4_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    15    0.05                           clknet_4_1_0_clk (net)
+                  0.27    0.00   11.02 ^ _9111_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                         -0.25   10.77   clock uncertainty
+                          0.03   10.80   clock reconvergence pessimism
+                         -0.05   10.75   library setup time
+                                 10.75   data required time
+-----------------------------------------------------------------------------
+                                 10.75   data required time
+                                -11.11   data arrival time
+-----------------------------------------------------------------------------
+                                 -0.36   slack (VIOLATED)
+
+
+Startpoint: _9195_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _9112_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.15    0.15 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.15 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.19    0.34 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.34 ^ clkbuf_1_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.14    0.18    0.52 ^ clkbuf_1_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_1_0_clk (net)
+                  0.14    0.00    0.52 ^ clkbuf_2_2_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.20    0.72 ^ clkbuf_2_2_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_2_2_0_clk (net)
+                  0.11    0.00    0.72 ^ clkbuf_3_5_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.07    0.16    0.88 ^ clkbuf_3_5_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_5_0_clk (net)
+                  0.07    0.00    0.88 ^ clkbuf_4_10_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.28    0.30    1.18 ^ clkbuf_4_10_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    13    0.05                           clknet_4_10_0_clk (net)
+                  0.28    0.00    1.18 ^ _9195_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.06    0.44    1.61 v _9195_/Q (sky130_fd_sc_hd__dfxtp_2)
+     2    0.02                           P1[34] (net)
+                  0.06    0.00    1.62 v _5806_/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16    1.78 v _5806_/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.02                           _0522_ (net)
+                  0.08    0.00    1.78 v _5807_/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.08    0.21    1.99 v _5807_/X (sky130_fd_sc_hd__clkbuf_4)
+     5    0.03                           _0523_ (net)
+                  0.08    0.00    1.99 v _5810_/A1 (sky130_fd_sc_hd__a22o_1)
+                  0.06    0.25    2.23 v _5810_/X (sky130_fd_sc_hd__a22o_1)
+     2    0.01                           _0526_ (net)
+                  0.06    0.00    2.23 v _5857_/A3 (sky130_fd_sc_hd__a32o_1)
+                  0.07    0.30    2.54 v _5857_/X (sky130_fd_sc_hd__a32o_1)
+     2    0.01                           _0573_ (net)
+                  0.07    0.00    2.54 v _5858_/C (sky130_fd_sc_hd__and3_1)
+                  0.06    0.23    2.76 v _5858_/X (sky130_fd_sc_hd__and3_1)
+     2    0.01                           _0574_ (net)
+                  0.06    0.00    2.76 v _5860_/A_N (sky130_fd_sc_hd__and2b_1)
+                  0.10    0.25    3.01 ^ _5860_/X (sky130_fd_sc_hd__and2b_1)
+     1    0.01                           _0576_ (net)
+                  0.10    0.00    3.01 ^ _5861_/B (sky130_fd_sc_hd__xor2_2)
+                  0.09    0.11    3.12 v _5861_/X (sky130_fd_sc_hd__xor2_2)
+     2    0.01                           _0577_ (net)
+                  0.09    0.00    3.12 v _5863_/A (sky130_fd_sc_hd__or3_1)
+                  0.10    0.44    3.57 v _5863_/X (sky130_fd_sc_hd__or3_1)
+     2    0.01                           _0579_ (net)
+                  0.10    0.00    3.57 v _5898_/B (sky130_fd_sc_hd__and3b_1)
+                  0.08    0.24    3.80 v _5898_/X (sky130_fd_sc_hd__and3b_1)
+     2    0.01                           _0614_ (net)
+                  0.08    0.00    3.80 v _5931_/A2 (sky130_fd_sc_hd__o211ai_4)
+                  0.23    0.25    4.05 ^ _5931_/Y (sky130_fd_sc_hd__o211ai_4)
+     5    0.02                           _0647_ (net)
+                  0.23    0.00    4.05 ^ _5934_/C_N (sky130_fd_sc_hd__or4bb_4)
+                  0.10    0.62    4.67 v _5934_/X (sky130_fd_sc_hd__or4bb_4)
+     5    0.01                           _0650_ (net)
+                  0.10    0.00    4.67 v _6047_/A (sky130_fd_sc_hd__or4_1)
+                  0.10    0.59    5.26 v _6047_/X (sky130_fd_sc_hd__or4_1)
+     2    0.01                           _0761_ (net)
+                  0.10    0.00    5.26 v _6048_/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.10    0.23    5.50 v _6048_/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     5    0.02                           _0762_ (net)
+                  0.10    0.00    5.50 v _6049_/D (sky130_fd_sc_hd__and4bb_1)
+                  0.06    0.26    5.75 v _6049_/X (sky130_fd_sc_hd__and4bb_1)
+     2    0.01                           _0763_ (net)
+                  0.06    0.00    5.75 v _6129_/D1 (sky130_fd_sc_hd__a2111o_1)
+                  0.09    0.34    6.09 v _6129_/X (sky130_fd_sc_hd__a2111o_1)
+     2    0.01                           _0841_ (net)
+                  0.09    0.00    6.09 v _6217_/A1 (sky130_fd_sc_hd__a21o_1)
+                  0.08    0.23    6.31 v _6217_/X (sky130_fd_sc_hd__a21o_1)
+     4    0.01                           _0929_ (net)
+                  0.08    0.00    6.31 v _6384_/A2 (sky130_fd_sc_hd__a311oi_2)
+                  0.29    0.34    6.65 ^ _6384_/Y (sky130_fd_sc_hd__a311oi_2)
+     2    0.01                           _1108_ (net)
+                  0.29    0.00    6.65 ^ _6477_/A1 (sky130_fd_sc_hd__o21ai_1)
+                  0.13    0.20    6.85 v _6477_/Y (sky130_fd_sc_hd__o21ai_1)
+     3    0.01                           _1210_ (net)
+                  0.13    0.00    6.85 v _6559_/A1 (sky130_fd_sc_hd__a21oi_2)
+                  0.16    0.21    7.06 ^ _6559_/Y (sky130_fd_sc_hd__a21oi_2)
+     3    0.01                           _1299_ (net)
+                  0.16    0.00    7.06 ^ _6650_/A1 (sky130_fd_sc_hd__o21ai_1)
+                  0.14    0.16    7.23 v _6650_/Y (sky130_fd_sc_hd__o21ai_1)
+     3    0.01                           _1398_ (net)
+                  0.14    0.00    7.23 v _7067_/A2 (sky130_fd_sc_hd__a211o_1)
+                  0.08    0.38    7.61 v _7067_/X (sky130_fd_sc_hd__a211o_1)
+     2    0.01                           _1852_ (net)
+                  0.08    0.00    7.61 v _7554_/A1 (sky130_fd_sc_hd__a311o_2)
+                  0.09    0.40    8.01 v _7554_/X (sky130_fd_sc_hd__a311o_2)
+     2    0.02                           _2384_ (net)
+                  0.09    0.00    8.01 v _7676_/A2 (sky130_fd_sc_hd__a21oi_4)
+                  0.26    0.30    8.31 ^ _7676_/Y (sky130_fd_sc_hd__a21oi_4)
+     4    0.03                           _2518_ (net)
+                  0.26    0.00    8.31 ^ _8023_/A2 (sky130_fd_sc_hd__o311ai_4)
+                  0.13    0.18    8.49 v _8023_/Y (sky130_fd_sc_hd__o311ai_4)
+     3    0.02                           _2895_ (net)
+                  0.13    0.00    8.49 v _8127_/A2 (sky130_fd_sc_hd__a311oi_4)
+                  0.37    0.43    8.92 ^ _8127_/Y (sky130_fd_sc_hd__a311oi_4)
+     4    0.02                           _3009_ (net)
+                  0.37    0.00    8.92 ^ _8428_/A2 (sky130_fd_sc_hd__o311ai_4)
+                  0.11    0.16    9.08 v _8428_/Y (sky130_fd_sc_hd__o311ai_4)
+     3    0.01                           _3336_ (net)
+                  0.11    0.00    9.08 v _8650_/A1 (sky130_fd_sc_hd__a2111o_1)
+                  0.12    0.48    9.56 v _8650_/X (sky130_fd_sc_hd__a2111o_1)
+     3    0.02                           _3577_ (net)
+                  0.12    0.00    9.56 v _8774_/A1 (sky130_fd_sc_hd__a22oi_4)
+                  0.25    0.30    9.86 ^ _8774_/Y (sky130_fd_sc_hd__a22oi_4)
+     4    0.03                           _3712_ (net)
+                  0.25    0.00    9.86 ^ _8971_/A1 (sky130_fd_sc_hd__a31oi_4)
+                  0.12    0.16   10.02 v _8971_/Y (sky130_fd_sc_hd__a31oi_4)
+     3    0.02                           _3924_ (net)
+                  0.12    0.00   10.02 v _9021_/A2 (sky130_fd_sc_hd__o41a_1)
+                  0.12    0.52   10.54 v _9021_/X (sky130_fd_sc_hd__o41a_1)
+     3    0.01                           _3976_ (net)
+                  0.12    0.00   10.54 v _9048_/A2 (sky130_fd_sc_hd__o31ai_2)
+                  0.29    0.34   10.88 ^ _9048_/Y (sky130_fd_sc_hd__o31ai_2)
+     2    0.01                           _4004_ (net)
+                  0.29    0.00   10.88 ^ _9051_/A2 (sky130_fd_sc_hd__a21bo_1)
+                  0.05    0.18   11.06 ^ _9051_/X (sky130_fd_sc_hd__a21bo_1)
+     1    0.00                           _0075_ (net)
+                  0.05    0.00   11.06 ^ _9112_/D (sky130_fd_sc_hd__dfxtp_2)
+                                 11.06   data arrival time
+
+                         10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock source latency
+                  0.21    0.14   10.14 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00   10.14 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.17   10.31 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00   10.31 ^ clkbuf_1_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.18   10.49 ^ clkbuf_1_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_0_0_clk (net)
+                  0.16    0.00   10.49 ^ clkbuf_2_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16   10.65 ^ clkbuf_2_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_2_0_0_clk (net)
+                  0.08    0.00   10.65 ^ clkbuf_3_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.06    0.12   10.77 ^ clkbuf_3_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_0_0_clk (net)
+                  0.06    0.00   10.77 ^ clkbuf_4_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.27    0.25   11.02 ^ clkbuf_4_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    15    0.05                           clknet_4_1_0_clk (net)
+                  0.27    0.00   11.02 ^ _9112_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                         -0.25   10.77   clock uncertainty
+                          0.03   10.81   clock reconvergence pessimism
+                         -0.03   10.78   library setup time
+                                 10.78   data required time
+-----------------------------------------------------------------------------
+                                 10.78   data required time
+                                -11.06   data arrival time
+-----------------------------------------------------------------------------
+                                 -0.28   slack (VIOLATED)
+
+
+Startpoint: _9195_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _9110_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.15    0.15 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.15 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.19    0.34 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.34 ^ clkbuf_1_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.14    0.18    0.52 ^ clkbuf_1_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_1_0_clk (net)
+                  0.14    0.00    0.52 ^ clkbuf_2_2_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.20    0.72 ^ clkbuf_2_2_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_2_2_0_clk (net)
+                  0.11    0.00    0.72 ^ clkbuf_3_5_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.07    0.16    0.88 ^ clkbuf_3_5_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_5_0_clk (net)
+                  0.07    0.00    0.88 ^ clkbuf_4_10_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.28    0.30    1.18 ^ clkbuf_4_10_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    13    0.05                           clknet_4_10_0_clk (net)
+                  0.28    0.00    1.18 ^ _9195_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.06    0.44    1.61 v _9195_/Q (sky130_fd_sc_hd__dfxtp_2)
+     2    0.02                           P1[34] (net)
+                  0.06    0.00    1.62 v _5806_/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16    1.78 v _5806_/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.02                           _0522_ (net)
+                  0.08    0.00    1.78 v _5807_/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.08    0.21    1.99 v _5807_/X (sky130_fd_sc_hd__clkbuf_4)
+     5    0.03                           _0523_ (net)
+                  0.08    0.00    1.99 v _5810_/A1 (sky130_fd_sc_hd__a22o_1)
+                  0.06    0.25    2.23 v _5810_/X (sky130_fd_sc_hd__a22o_1)
+     2    0.01                           _0526_ (net)
+                  0.06    0.00    2.23 v _5857_/A3 (sky130_fd_sc_hd__a32o_1)
+                  0.07    0.30    2.54 v _5857_/X (sky130_fd_sc_hd__a32o_1)
+     2    0.01                           _0573_ (net)
+                  0.07    0.00    2.54 v _5858_/C (sky130_fd_sc_hd__and3_1)
+                  0.06    0.23    2.76 v _5858_/X (sky130_fd_sc_hd__and3_1)
+     2    0.01                           _0574_ (net)
+                  0.06    0.00    2.76 v _5860_/A_N (sky130_fd_sc_hd__and2b_1)
+                  0.10    0.25    3.01 ^ _5860_/X (sky130_fd_sc_hd__and2b_1)
+     1    0.01                           _0576_ (net)
+                  0.10    0.00    3.01 ^ _5861_/B (sky130_fd_sc_hd__xor2_2)
+                  0.09    0.11    3.12 v _5861_/X (sky130_fd_sc_hd__xor2_2)
+     2    0.01                           _0577_ (net)
+                  0.09    0.00    3.12 v _5863_/A (sky130_fd_sc_hd__or3_1)
+                  0.10    0.44    3.57 v _5863_/X (sky130_fd_sc_hd__or3_1)
+     2    0.01                           _0579_ (net)
+                  0.10    0.00    3.57 v _5898_/B (sky130_fd_sc_hd__and3b_1)
+                  0.08    0.24    3.80 v _5898_/X (sky130_fd_sc_hd__and3b_1)
+     2    0.01                           _0614_ (net)
+                  0.08    0.00    3.80 v _5931_/A2 (sky130_fd_sc_hd__o211ai_4)
+                  0.23    0.25    4.05 ^ _5931_/Y (sky130_fd_sc_hd__o211ai_4)
+     5    0.02                           _0647_ (net)
+                  0.23    0.00    4.05 ^ _5934_/C_N (sky130_fd_sc_hd__or4bb_4)
+                  0.10    0.62    4.67 v _5934_/X (sky130_fd_sc_hd__or4bb_4)
+     5    0.01                           _0650_ (net)
+                  0.10    0.00    4.67 v _6047_/A (sky130_fd_sc_hd__or4_1)
+                  0.10    0.59    5.26 v _6047_/X (sky130_fd_sc_hd__or4_1)
+     2    0.01                           _0761_ (net)
+                  0.10    0.00    5.26 v _6048_/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.10    0.23    5.50 v _6048_/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     5    0.02                           _0762_ (net)
+                  0.10    0.00    5.50 v _6049_/D (sky130_fd_sc_hd__and4bb_1)
+                  0.06    0.26    5.75 v _6049_/X (sky130_fd_sc_hd__and4bb_1)
+     2    0.01                           _0763_ (net)
+                  0.06    0.00    5.75 v _6129_/D1 (sky130_fd_sc_hd__a2111o_1)
+                  0.09    0.34    6.09 v _6129_/X (sky130_fd_sc_hd__a2111o_1)
+     2    0.01                           _0841_ (net)
+                  0.09    0.00    6.09 v _6217_/A1 (sky130_fd_sc_hd__a21o_1)
+                  0.08    0.23    6.31 v _6217_/X (sky130_fd_sc_hd__a21o_1)
+     4    0.01                           _0929_ (net)
+                  0.08    0.00    6.31 v _6384_/A2 (sky130_fd_sc_hd__a311oi_2)
+                  0.29    0.34    6.65 ^ _6384_/Y (sky130_fd_sc_hd__a311oi_2)
+     2    0.01                           _1108_ (net)
+                  0.29    0.00    6.65 ^ _6477_/A1 (sky130_fd_sc_hd__o21ai_1)
+                  0.13    0.20    6.85 v _6477_/Y (sky130_fd_sc_hd__o21ai_1)
+     3    0.01                           _1210_ (net)
+                  0.13    0.00    6.85 v _6559_/A1 (sky130_fd_sc_hd__a21oi_2)
+                  0.16    0.21    7.06 ^ _6559_/Y (sky130_fd_sc_hd__a21oi_2)
+     3    0.01                           _1299_ (net)
+                  0.16    0.00    7.06 ^ _6650_/A1 (sky130_fd_sc_hd__o21ai_1)
+                  0.14    0.16    7.23 v _6650_/Y (sky130_fd_sc_hd__o21ai_1)
+     3    0.01                           _1398_ (net)
+                  0.14    0.00    7.23 v _7067_/A2 (sky130_fd_sc_hd__a211o_1)
+                  0.08    0.38    7.61 v _7067_/X (sky130_fd_sc_hd__a211o_1)
+     2    0.01                           _1852_ (net)
+                  0.08    0.00    7.61 v _7554_/A1 (sky130_fd_sc_hd__a311o_2)
+                  0.09    0.40    8.01 v _7554_/X (sky130_fd_sc_hd__a311o_2)
+     2    0.02                           _2384_ (net)
+                  0.09    0.00    8.01 v _7676_/A2 (sky130_fd_sc_hd__a21oi_4)
+                  0.26    0.30    8.31 ^ _7676_/Y (sky130_fd_sc_hd__a21oi_4)
+     4    0.03                           _2518_ (net)
+                  0.26    0.00    8.31 ^ _8023_/A2 (sky130_fd_sc_hd__o311ai_4)
+                  0.13    0.18    8.49 v _8023_/Y (sky130_fd_sc_hd__o311ai_4)
+     3    0.02                           _2895_ (net)
+                  0.13    0.00    8.49 v _8127_/A2 (sky130_fd_sc_hd__a311oi_4)
+                  0.37    0.43    8.92 ^ _8127_/Y (sky130_fd_sc_hd__a311oi_4)
+     4    0.02                           _3009_ (net)
+                  0.37    0.00    8.92 ^ _8428_/A2 (sky130_fd_sc_hd__o311ai_4)
+                  0.11    0.16    9.08 v _8428_/Y (sky130_fd_sc_hd__o311ai_4)
+     3    0.01                           _3336_ (net)
+                  0.11    0.00    9.08 v _8650_/A1 (sky130_fd_sc_hd__a2111o_1)
+                  0.12    0.48    9.56 v _8650_/X (sky130_fd_sc_hd__a2111o_1)
+     3    0.02                           _3577_ (net)
+                  0.12    0.00    9.56 v _8774_/A1 (sky130_fd_sc_hd__a22oi_4)
+                  0.25    0.30    9.86 ^ _8774_/Y (sky130_fd_sc_hd__a22oi_4)
+     4    0.03                           _3712_ (net)
+                  0.25    0.00    9.86 ^ _8971_/A1 (sky130_fd_sc_hd__a31oi_4)
+                  0.12    0.16   10.02 v _8971_/Y (sky130_fd_sc_hd__a31oi_4)
+     3    0.02                           _3924_ (net)
+                  0.12    0.00   10.02 v _9021_/A2 (sky130_fd_sc_hd__o41a_1)
+                  0.12    0.52   10.54 v _9021_/X (sky130_fd_sc_hd__o41a_1)
+     3    0.01                           _3976_ (net)
+                  0.12    0.00   10.54 v _9039_/A2 (sky130_fd_sc_hd__o21ai_1)
+                  0.16    0.19   10.73 ^ _9039_/Y (sky130_fd_sc_hd__o21ai_1)
+     1    0.01                           _3995_ (net)
+                  0.16    0.00   10.73 ^ _9040_/B (sky130_fd_sc_hd__xnor2_1)
+                  0.20    0.17   10.90 ^ _9040_/Y (sky130_fd_sc_hd__xnor2_1)
+     1    0.01                           _0073_ (net)
+                  0.20    0.00   10.90 ^ _9110_/D (sky130_fd_sc_hd__dfxtp_1)
+                                 10.90   data arrival time
+
+                         10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock source latency
+                  0.21    0.14   10.14 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00   10.14 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.17   10.31 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00   10.31 ^ clkbuf_1_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.18   10.49 ^ clkbuf_1_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_0_0_clk (net)
+                  0.16    0.00   10.49 ^ clkbuf_2_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16   10.65 ^ clkbuf_2_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_2_0_0_clk (net)
+                  0.08    0.00   10.65 ^ clkbuf_3_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.06    0.12   10.77 ^ clkbuf_3_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_0_0_clk (net)
+                  0.06    0.00   10.77 ^ clkbuf_4_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.27    0.25   11.02 ^ clkbuf_4_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    15    0.05                           clknet_4_1_0_clk (net)
+                  0.27    0.00   11.02 ^ _9110_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                         -0.25   10.77   clock uncertainty
+                          0.03   10.80   clock reconvergence pessimism
+                         -0.05   10.75   library setup time
+                                 10.75   data required time
+-----------------------------------------------------------------------------
+                                 10.75   data required time
+                                -10.90   data arrival time
+-----------------------------------------------------------------------------
+                                 -0.15   slack (VIOLATED)
+
+
+Startpoint: _9195_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _9109_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.15    0.15 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.15 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.19    0.34 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.34 ^ clkbuf_1_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.14    0.18    0.52 ^ clkbuf_1_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_1_0_clk (net)
+                  0.14    0.00    0.52 ^ clkbuf_2_2_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.20    0.72 ^ clkbuf_2_2_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_2_2_0_clk (net)
+                  0.11    0.00    0.72 ^ clkbuf_3_5_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.07    0.16    0.88 ^ clkbuf_3_5_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_5_0_clk (net)
+                  0.07    0.00    0.88 ^ clkbuf_4_10_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.28    0.30    1.18 ^ clkbuf_4_10_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    13    0.05                           clknet_4_10_0_clk (net)
+                  0.28    0.00    1.18 ^ _9195_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.06    0.44    1.61 v _9195_/Q (sky130_fd_sc_hd__dfxtp_2)
+     2    0.02                           P1[34] (net)
+                  0.06    0.00    1.62 v _5806_/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16    1.78 v _5806_/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.02                           _0522_ (net)
+                  0.08    0.00    1.78 v _5807_/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.08    0.21    1.99 v _5807_/X (sky130_fd_sc_hd__clkbuf_4)
+     5    0.03                           _0523_ (net)
+                  0.08    0.00    1.99 v _5810_/A1 (sky130_fd_sc_hd__a22o_1)
+                  0.06    0.25    2.23 v _5810_/X (sky130_fd_sc_hd__a22o_1)
+     2    0.01                           _0526_ (net)
+                  0.06    0.00    2.23 v _5857_/A3 (sky130_fd_sc_hd__a32o_1)
+                  0.07    0.30    2.54 v _5857_/X (sky130_fd_sc_hd__a32o_1)
+     2    0.01                           _0573_ (net)
+                  0.07    0.00    2.54 v _5858_/C (sky130_fd_sc_hd__and3_1)
+                  0.06    0.23    2.76 v _5858_/X (sky130_fd_sc_hd__and3_1)
+     2    0.01                           _0574_ (net)
+                  0.06    0.00    2.76 v _5860_/A_N (sky130_fd_sc_hd__and2b_1)
+                  0.10    0.25    3.01 ^ _5860_/X (sky130_fd_sc_hd__and2b_1)
+     1    0.01                           _0576_ (net)
+                  0.10    0.00    3.01 ^ _5861_/B (sky130_fd_sc_hd__xor2_2)
+                  0.09    0.11    3.12 v _5861_/X (sky130_fd_sc_hd__xor2_2)
+     2    0.01                           _0577_ (net)
+                  0.09    0.00    3.12 v _5863_/A (sky130_fd_sc_hd__or3_1)
+                  0.10    0.44    3.57 v _5863_/X (sky130_fd_sc_hd__or3_1)
+     2    0.01                           _0579_ (net)
+                  0.10    0.00    3.57 v _5898_/B (sky130_fd_sc_hd__and3b_1)
+                  0.08    0.24    3.80 v _5898_/X (sky130_fd_sc_hd__and3b_1)
+     2    0.01                           _0614_ (net)
+                  0.08    0.00    3.80 v _5931_/A2 (sky130_fd_sc_hd__o211ai_4)
+                  0.23    0.25    4.05 ^ _5931_/Y (sky130_fd_sc_hd__o211ai_4)
+     5    0.02                           _0647_ (net)
+                  0.23    0.00    4.05 ^ _5934_/C_N (sky130_fd_sc_hd__or4bb_4)
+                  0.10    0.62    4.67 v _5934_/X (sky130_fd_sc_hd__or4bb_4)
+     5    0.01                           _0650_ (net)
+                  0.10    0.00    4.67 v _6047_/A (sky130_fd_sc_hd__or4_1)
+                  0.10    0.59    5.26 v _6047_/X (sky130_fd_sc_hd__or4_1)
+     2    0.01                           _0761_ (net)
+                  0.10    0.00    5.26 v _6048_/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.10    0.23    5.50 v _6048_/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     5    0.02                           _0762_ (net)
+                  0.10    0.00    5.50 v _6049_/D (sky130_fd_sc_hd__and4bb_1)
+                  0.06    0.26    5.75 v _6049_/X (sky130_fd_sc_hd__and4bb_1)
+     2    0.01                           _0763_ (net)
+                  0.06    0.00    5.75 v _6129_/D1 (sky130_fd_sc_hd__a2111o_1)
+                  0.09    0.34    6.09 v _6129_/X (sky130_fd_sc_hd__a2111o_1)
+     2    0.01                           _0841_ (net)
+                  0.09    0.00    6.09 v _6217_/A1 (sky130_fd_sc_hd__a21o_1)
+                  0.08    0.23    6.31 v _6217_/X (sky130_fd_sc_hd__a21o_1)
+     4    0.01                           _0929_ (net)
+                  0.08    0.00    6.31 v _6384_/A2 (sky130_fd_sc_hd__a311oi_2)
+                  0.29    0.34    6.65 ^ _6384_/Y (sky130_fd_sc_hd__a311oi_2)
+     2    0.01                           _1108_ (net)
+                  0.29    0.00    6.65 ^ _6477_/A1 (sky130_fd_sc_hd__o21ai_1)
+                  0.13    0.20    6.85 v _6477_/Y (sky130_fd_sc_hd__o21ai_1)
+     3    0.01                           _1210_ (net)
+                  0.13    0.00    6.85 v _6559_/A1 (sky130_fd_sc_hd__a21oi_2)
+                  0.16    0.21    7.06 ^ _6559_/Y (sky130_fd_sc_hd__a21oi_2)
+     3    0.01                           _1299_ (net)
+                  0.16    0.00    7.06 ^ _6650_/A1 (sky130_fd_sc_hd__o21ai_1)
+                  0.14    0.16    7.23 v _6650_/Y (sky130_fd_sc_hd__o21ai_1)
+     3    0.01                           _1398_ (net)
+                  0.14    0.00    7.23 v _7067_/A2 (sky130_fd_sc_hd__a211o_1)
+                  0.08    0.38    7.61 v _7067_/X (sky130_fd_sc_hd__a211o_1)
+     2    0.01                           _1852_ (net)
+                  0.08    0.00    7.61 v _7554_/A1 (sky130_fd_sc_hd__a311o_2)
+                  0.09    0.40    8.01 v _7554_/X (sky130_fd_sc_hd__a311o_2)
+     2    0.02                           _2384_ (net)
+                  0.09    0.00    8.01 v _7676_/A2 (sky130_fd_sc_hd__a21oi_4)
+                  0.26    0.30    8.31 ^ _7676_/Y (sky130_fd_sc_hd__a21oi_4)
+     4    0.03                           _2518_ (net)
+                  0.26    0.00    8.31 ^ _8023_/A2 (sky130_fd_sc_hd__o311ai_4)
+                  0.13    0.18    8.49 v _8023_/Y (sky130_fd_sc_hd__o311ai_4)
+     3    0.02                           _2895_ (net)
+                  0.13    0.00    8.49 v _8127_/A2 (sky130_fd_sc_hd__a311oi_4)
+                  0.37    0.43    8.92 ^ _8127_/Y (sky130_fd_sc_hd__a311oi_4)
+     4    0.02                           _3009_ (net)
+                  0.37    0.00    8.92 ^ _8428_/A2 (sky130_fd_sc_hd__o311ai_4)
+                  0.11    0.16    9.08 v _8428_/Y (sky130_fd_sc_hd__o311ai_4)
+     3    0.01                           _3336_ (net)
+                  0.11    0.00    9.08 v _8650_/A1 (sky130_fd_sc_hd__a2111o_1)
+                  0.12    0.48    9.56 v _8650_/X (sky130_fd_sc_hd__a2111o_1)
+     3    0.02                           _3577_ (net)
+                  0.12    0.00    9.56 v _8774_/A1 (sky130_fd_sc_hd__a22oi_4)
+                  0.25    0.30    9.86 ^ _8774_/Y (sky130_fd_sc_hd__a22oi_4)
+     4    0.03                           _3712_ (net)
+                  0.25    0.00    9.86 ^ _8971_/A1 (sky130_fd_sc_hd__a31oi_4)
+                  0.12    0.16   10.02 v _8971_/Y (sky130_fd_sc_hd__a31oi_4)
+     3    0.02                           _3924_ (net)
+                  0.12    0.00   10.02 v _9021_/A2 (sky130_fd_sc_hd__o41a_1)
+                  0.12    0.52   10.54 v _9021_/X (sky130_fd_sc_hd__o41a_1)
+     3    0.01                           _3976_ (net)
+                  0.12    0.00   10.54 v _9022_/B (sky130_fd_sc_hd__xor2_1)
+                  0.08    0.18   10.72 v _9022_/X (sky130_fd_sc_hd__xor2_1)
+     1    0.01                           _0072_ (net)
+                  0.08    0.00   10.72 v _9109_/D (sky130_fd_sc_hd__dfxtp_1)
+                                 10.72   data arrival time
+
+                         10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock source latency
+                  0.21    0.14   10.14 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00   10.14 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.17   10.31 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00   10.31 ^ clkbuf_1_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.18   10.49 ^ clkbuf_1_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_0_0_clk (net)
+                  0.16    0.00   10.49 ^ clkbuf_2_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16   10.65 ^ clkbuf_2_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_2_0_0_clk (net)
+                  0.08    0.00   10.65 ^ clkbuf_3_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.06    0.12   10.77 ^ clkbuf_3_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_0_0_clk (net)
+                  0.06    0.00   10.77 ^ clkbuf_4_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.27    0.25   11.02 ^ clkbuf_4_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    15    0.05                           clknet_4_1_0_clk (net)
+                  0.27    0.00   11.02 ^ _9109_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                         -0.25   10.77   clock uncertainty
+                          0.03   10.81   clock reconvergence pessimism
+                         -0.07   10.73   library setup time
+                                 10.73   data required time
+-----------------------------------------------------------------------------
+                                 10.73   data required time
+                                -10.72   data arrival time
+-----------------------------------------------------------------------------
+                                  0.01   slack (MET)
+
+
+Startpoint: _9195_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _9105_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.15    0.15 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.15 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.19    0.34 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.34 ^ clkbuf_1_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.14    0.18    0.52 ^ clkbuf_1_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_1_0_clk (net)
+                  0.14    0.00    0.52 ^ clkbuf_2_2_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.20    0.72 ^ clkbuf_2_2_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_2_2_0_clk (net)
+                  0.11    0.00    0.72 ^ clkbuf_3_5_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.07    0.16    0.88 ^ clkbuf_3_5_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_5_0_clk (net)
+                  0.07    0.00    0.88 ^ clkbuf_4_10_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.28    0.30    1.18 ^ clkbuf_4_10_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    13    0.05                           clknet_4_10_0_clk (net)
+                  0.28    0.00    1.18 ^ _9195_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.06    0.44    1.61 v _9195_/Q (sky130_fd_sc_hd__dfxtp_2)
+     2    0.02                           P1[34] (net)
+                  0.06    0.00    1.62 v _5806_/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16    1.78 v _5806_/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.02                           _0522_ (net)
+                  0.08    0.00    1.78 v _5807_/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.08    0.21    1.99 v _5807_/X (sky130_fd_sc_hd__clkbuf_4)
+     5    0.03                           _0523_ (net)
+                  0.08    0.00    1.99 v _5810_/A1 (sky130_fd_sc_hd__a22o_1)
+                  0.06    0.25    2.23 v _5810_/X (sky130_fd_sc_hd__a22o_1)
+     2    0.01                           _0526_ (net)
+                  0.06    0.00    2.23 v _5857_/A3 (sky130_fd_sc_hd__a32o_1)
+                  0.07    0.30    2.54 v _5857_/X (sky130_fd_sc_hd__a32o_1)
+     2    0.01                           _0573_ (net)
+                  0.07    0.00    2.54 v _5858_/C (sky130_fd_sc_hd__and3_1)
+                  0.06    0.23    2.76 v _5858_/X (sky130_fd_sc_hd__and3_1)
+     2    0.01                           _0574_ (net)
+                  0.06    0.00    2.76 v _5860_/A_N (sky130_fd_sc_hd__and2b_1)
+                  0.10    0.25    3.01 ^ _5860_/X (sky130_fd_sc_hd__and2b_1)
+     1    0.01                           _0576_ (net)
+                  0.10    0.00    3.01 ^ _5861_/B (sky130_fd_sc_hd__xor2_2)
+                  0.09    0.11    3.12 v _5861_/X (sky130_fd_sc_hd__xor2_2)
+     2    0.01                           _0577_ (net)
+                  0.09    0.00    3.12 v _5863_/A (sky130_fd_sc_hd__or3_1)
+                  0.10    0.44    3.57 v _5863_/X (sky130_fd_sc_hd__or3_1)
+     2    0.01                           _0579_ (net)
+                  0.10    0.00    3.57 v _5898_/B (sky130_fd_sc_hd__and3b_1)
+                  0.08    0.24    3.80 v _5898_/X (sky130_fd_sc_hd__and3b_1)
+     2    0.01                           _0614_ (net)
+                  0.08    0.00    3.80 v _5931_/A2 (sky130_fd_sc_hd__o211ai_4)
+                  0.23    0.25    4.05 ^ _5931_/Y (sky130_fd_sc_hd__o211ai_4)
+     5    0.02                           _0647_ (net)
+                  0.23    0.00    4.05 ^ _5934_/C_N (sky130_fd_sc_hd__or4bb_4)
+                  0.10    0.62    4.67 v _5934_/X (sky130_fd_sc_hd__or4bb_4)
+     5    0.01                           _0650_ (net)
+                  0.10    0.00    4.67 v _6047_/A (sky130_fd_sc_hd__or4_1)
+                  0.10    0.59    5.26 v _6047_/X (sky130_fd_sc_hd__or4_1)
+     2    0.01                           _0761_ (net)
+                  0.10    0.00    5.26 v _6048_/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.10    0.23    5.50 v _6048_/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     5    0.02                           _0762_ (net)
+                  0.10    0.00    5.50 v _6049_/D (sky130_fd_sc_hd__and4bb_1)
+                  0.06    0.26    5.75 v _6049_/X (sky130_fd_sc_hd__and4bb_1)
+     2    0.01                           _0763_ (net)
+                  0.06    0.00    5.75 v _6129_/D1 (sky130_fd_sc_hd__a2111o_1)
+                  0.09    0.34    6.09 v _6129_/X (sky130_fd_sc_hd__a2111o_1)
+     2    0.01                           _0841_ (net)
+                  0.09    0.00    6.09 v _6217_/A1 (sky130_fd_sc_hd__a21o_1)
+                  0.08    0.23    6.31 v _6217_/X (sky130_fd_sc_hd__a21o_1)
+     4    0.01                           _0929_ (net)
+                  0.08    0.00    6.31 v _6384_/A2 (sky130_fd_sc_hd__a311oi_2)
+                  0.29    0.34    6.65 ^ _6384_/Y (sky130_fd_sc_hd__a311oi_2)
+     2    0.01                           _1108_ (net)
+                  0.29    0.00    6.65 ^ _6477_/A1 (sky130_fd_sc_hd__o21ai_1)
+                  0.13    0.20    6.85 v _6477_/Y (sky130_fd_sc_hd__o21ai_1)
+     3    0.01                           _1210_ (net)
+                  0.13    0.00    6.85 v _6559_/A1 (sky130_fd_sc_hd__a21oi_2)
+                  0.16    0.21    7.06 ^ _6559_/Y (sky130_fd_sc_hd__a21oi_2)
+     3    0.01                           _1299_ (net)
+                  0.16    0.00    7.06 ^ _6650_/A1 (sky130_fd_sc_hd__o21ai_1)
+                  0.14    0.16    7.23 v _6650_/Y (sky130_fd_sc_hd__o21ai_1)
+     3    0.01                           _1398_ (net)
+                  0.14    0.00    7.23 v _7067_/A2 (sky130_fd_sc_hd__a211o_1)
+                  0.08    0.38    7.61 v _7067_/X (sky130_fd_sc_hd__a211o_1)
+     2    0.01                           _1852_ (net)
+                  0.08    0.00    7.61 v _7554_/A1 (sky130_fd_sc_hd__a311o_2)
+                  0.09    0.40    8.01 v _7554_/X (sky130_fd_sc_hd__a311o_2)
+     2    0.02                           _2384_ (net)
+                  0.09    0.00    8.01 v _7676_/A2 (sky130_fd_sc_hd__a21oi_4)
+                  0.26    0.30    8.31 ^ _7676_/Y (sky130_fd_sc_hd__a21oi_4)
+     4    0.03                           _2518_ (net)
+                  0.26    0.00    8.31 ^ _8023_/A2 (sky130_fd_sc_hd__o311ai_4)
+                  0.13    0.18    8.49 v _8023_/Y (sky130_fd_sc_hd__o311ai_4)
+     3    0.02                           _2895_ (net)
+                  0.13    0.00    8.49 v _8127_/A2 (sky130_fd_sc_hd__a311oi_4)
+                  0.37    0.43    8.92 ^ _8127_/Y (sky130_fd_sc_hd__a311oi_4)
+     4    0.02                           _3009_ (net)
+                  0.37    0.00    8.92 ^ _8428_/A2 (sky130_fd_sc_hd__o311ai_4)
+                  0.11    0.16    9.08 v _8428_/Y (sky130_fd_sc_hd__o311ai_4)
+     3    0.01                           _3336_ (net)
+                  0.11    0.00    9.08 v _8650_/A1 (sky130_fd_sc_hd__a2111o_1)
+                  0.12    0.48    9.56 v _8650_/X (sky130_fd_sc_hd__a2111o_1)
+     3    0.02                           _3577_ (net)
+                  0.12    0.00    9.56 v _8774_/A1 (sky130_fd_sc_hd__a22oi_4)
+                  0.25    0.30    9.86 ^ _8774_/Y (sky130_fd_sc_hd__a22oi_4)
+     4    0.03                           _3712_ (net)
+                  0.25    0.00    9.86 ^ _8882_/A1 (sky130_fd_sc_hd__a21o_1)
+                  0.07    0.18   10.04 ^ _8882_/X (sky130_fd_sc_hd__a21o_1)
+     2    0.01                           _3828_ (net)
+                  0.07    0.00   10.04 ^ _8884_/B (sky130_fd_sc_hd__nand2_1)
+                  0.07    0.08   10.12 v _8884_/Y (sky130_fd_sc_hd__nand2_1)
+     2    0.01                           _3831_ (net)
+                  0.07    0.00   10.12 v _8885_/B (sky130_fd_sc_hd__and2_1)
+                  0.04    0.17   10.29 v _8885_/X (sky130_fd_sc_hd__and2_1)
+     1    0.00                           _3832_ (net)
+                  0.04    0.00   10.29 v _8886_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.03    0.09   10.38 v _8886_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           _0068_ (net)
+                  0.03    0.00   10.38 v _9105_/D (sky130_fd_sc_hd__dfxtp_2)
+                                 10.38   data arrival time
+
+                         10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock source latency
+                  0.21    0.14   10.14 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00   10.14 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.17   10.31 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00   10.31 ^ clkbuf_1_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.18   10.49 ^ clkbuf_1_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_0_0_clk (net)
+                  0.16    0.00   10.49 ^ clkbuf_2_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.18   10.67 ^ clkbuf_2_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_2_1_0_clk (net)
+                  0.11    0.00   10.67 ^ clkbuf_3_3_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.07    0.14   10.81 ^ clkbuf_3_3_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_3_0_clk (net)
+                  0.07    0.00   10.81 ^ clkbuf_4_6_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.18    0.20   11.01 ^ clkbuf_4_6_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     4    0.03                           clknet_4_6_0_clk (net)
+                  0.18    0.00   11.01 ^ _9105_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                         -0.25   10.76   clock uncertainty
+                          0.03   10.79   clock reconvergence pessimism
+                         -0.07   10.72   library setup time
+                                 10.72   data required time
+-----------------------------------------------------------------------------
+                                 10.72   data required time
+                                -10.38   data arrival time
+-----------------------------------------------------------------------------
+                                  0.33   slack (MET)
+
+
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: _9195_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _9111_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.15    0.15 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.15 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.19    0.34 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.34 ^ clkbuf_1_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.14    0.18    0.52 ^ clkbuf_1_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_1_0_clk (net)
+                  0.14    0.00    0.52 ^ clkbuf_2_2_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.20    0.72 ^ clkbuf_2_2_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_2_2_0_clk (net)
+                  0.11    0.00    0.72 ^ clkbuf_3_5_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.07    0.16    0.88 ^ clkbuf_3_5_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_5_0_clk (net)
+                  0.07    0.00    0.88 ^ clkbuf_4_10_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.28    0.30    1.18 ^ clkbuf_4_10_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    13    0.05                           clknet_4_10_0_clk (net)
+                  0.28    0.00    1.18 ^ _9195_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.06    0.44    1.61 v _9195_/Q (sky130_fd_sc_hd__dfxtp_2)
+     2    0.02                           P1[34] (net)
+                  0.06    0.00    1.62 v _5806_/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16    1.78 v _5806_/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.02                           _0522_ (net)
+                  0.08    0.00    1.78 v _5807_/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.08    0.21    1.99 v _5807_/X (sky130_fd_sc_hd__clkbuf_4)
+     5    0.03                           _0523_ (net)
+                  0.08    0.00    1.99 v _5810_/A1 (sky130_fd_sc_hd__a22o_1)
+                  0.06    0.25    2.23 v _5810_/X (sky130_fd_sc_hd__a22o_1)
+     2    0.01                           _0526_ (net)
+                  0.06    0.00    2.23 v _5857_/A3 (sky130_fd_sc_hd__a32o_1)
+                  0.07    0.30    2.54 v _5857_/X (sky130_fd_sc_hd__a32o_1)
+     2    0.01                           _0573_ (net)
+                  0.07    0.00    2.54 v _5858_/C (sky130_fd_sc_hd__and3_1)
+                  0.06    0.23    2.76 v _5858_/X (sky130_fd_sc_hd__and3_1)
+     2    0.01                           _0574_ (net)
+                  0.06    0.00    2.76 v _5860_/A_N (sky130_fd_sc_hd__and2b_1)
+                  0.10    0.25    3.01 ^ _5860_/X (sky130_fd_sc_hd__and2b_1)
+     1    0.01                           _0576_ (net)
+                  0.10    0.00    3.01 ^ _5861_/B (sky130_fd_sc_hd__xor2_2)
+                  0.09    0.11    3.12 v _5861_/X (sky130_fd_sc_hd__xor2_2)
+     2    0.01                           _0577_ (net)
+                  0.09    0.00    3.12 v _5863_/A (sky130_fd_sc_hd__or3_1)
+                  0.10    0.44    3.57 v _5863_/X (sky130_fd_sc_hd__or3_1)
+     2    0.01                           _0579_ (net)
+                  0.10    0.00    3.57 v _5898_/B (sky130_fd_sc_hd__and3b_1)
+                  0.08    0.24    3.80 v _5898_/X (sky130_fd_sc_hd__and3b_1)
+     2    0.01                           _0614_ (net)
+                  0.08    0.00    3.80 v _5931_/A2 (sky130_fd_sc_hd__o211ai_4)
+                  0.23    0.25    4.05 ^ _5931_/Y (sky130_fd_sc_hd__o211ai_4)
+     5    0.02                           _0647_ (net)
+                  0.23    0.00    4.05 ^ _5934_/C_N (sky130_fd_sc_hd__or4bb_4)
+                  0.10    0.62    4.67 v _5934_/X (sky130_fd_sc_hd__or4bb_4)
+     5    0.01                           _0650_ (net)
+                  0.10    0.00    4.67 v _6047_/A (sky130_fd_sc_hd__or4_1)
+                  0.10    0.59    5.26 v _6047_/X (sky130_fd_sc_hd__or4_1)
+     2    0.01                           _0761_ (net)
+                  0.10    0.00    5.26 v _6048_/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.10    0.23    5.50 v _6048_/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     5    0.02                           _0762_ (net)
+                  0.10    0.00    5.50 v _6049_/D (sky130_fd_sc_hd__and4bb_1)
+                  0.06    0.26    5.75 v _6049_/X (sky130_fd_sc_hd__and4bb_1)
+     2    0.01                           _0763_ (net)
+                  0.06    0.00    5.75 v _6129_/D1 (sky130_fd_sc_hd__a2111o_1)
+                  0.09    0.34    6.09 v _6129_/X (sky130_fd_sc_hd__a2111o_1)
+     2    0.01                           _0841_ (net)
+                  0.09    0.00    6.09 v _6217_/A1 (sky130_fd_sc_hd__a21o_1)
+                  0.08    0.23    6.31 v _6217_/X (sky130_fd_sc_hd__a21o_1)
+     4    0.01                           _0929_ (net)
+                  0.08    0.00    6.31 v _6384_/A2 (sky130_fd_sc_hd__a311oi_2)
+                  0.29    0.34    6.65 ^ _6384_/Y (sky130_fd_sc_hd__a311oi_2)
+     2    0.01                           _1108_ (net)
+                  0.29    0.00    6.65 ^ _6477_/A1 (sky130_fd_sc_hd__o21ai_1)
+                  0.13    0.20    6.85 v _6477_/Y (sky130_fd_sc_hd__o21ai_1)
+     3    0.01                           _1210_ (net)
+                  0.13    0.00    6.85 v _6559_/A1 (sky130_fd_sc_hd__a21oi_2)
+                  0.16    0.21    7.06 ^ _6559_/Y (sky130_fd_sc_hd__a21oi_2)
+     3    0.01                           _1299_ (net)
+                  0.16    0.00    7.06 ^ _6650_/A1 (sky130_fd_sc_hd__o21ai_1)
+                  0.14    0.16    7.23 v _6650_/Y (sky130_fd_sc_hd__o21ai_1)
+     3    0.01                           _1398_ (net)
+                  0.14    0.00    7.23 v _7067_/A2 (sky130_fd_sc_hd__a211o_1)
+                  0.08    0.38    7.61 v _7067_/X (sky130_fd_sc_hd__a211o_1)
+     2    0.01                           _1852_ (net)
+                  0.08    0.00    7.61 v _7554_/A1 (sky130_fd_sc_hd__a311o_2)
+                  0.09    0.40    8.01 v _7554_/X (sky130_fd_sc_hd__a311o_2)
+     2    0.02                           _2384_ (net)
+                  0.09    0.00    8.01 v _7676_/A2 (sky130_fd_sc_hd__a21oi_4)
+                  0.26    0.30    8.31 ^ _7676_/Y (sky130_fd_sc_hd__a21oi_4)
+     4    0.03                           _2518_ (net)
+                  0.26    0.00    8.31 ^ _8023_/A2 (sky130_fd_sc_hd__o311ai_4)
+                  0.13    0.18    8.49 v _8023_/Y (sky130_fd_sc_hd__o311ai_4)
+     3    0.02                           _2895_ (net)
+                  0.13    0.00    8.49 v _8127_/A2 (sky130_fd_sc_hd__a311oi_4)
+                  0.37    0.43    8.92 ^ _8127_/Y (sky130_fd_sc_hd__a311oi_4)
+     4    0.02                           _3009_ (net)
+                  0.37    0.00    8.92 ^ _8428_/A2 (sky130_fd_sc_hd__o311ai_4)
+                  0.11    0.16    9.08 v _8428_/Y (sky130_fd_sc_hd__o311ai_4)
+     3    0.01                           _3336_ (net)
+                  0.11    0.00    9.08 v _8650_/A1 (sky130_fd_sc_hd__a2111o_1)
+                  0.12    0.48    9.56 v _8650_/X (sky130_fd_sc_hd__a2111o_1)
+     3    0.02                           _3577_ (net)
+                  0.12    0.00    9.56 v _8774_/A1 (sky130_fd_sc_hd__a22oi_4)
+                  0.25    0.30    9.86 ^ _8774_/Y (sky130_fd_sc_hd__a22oi_4)
+     4    0.03                           _3712_ (net)
+                  0.25    0.00    9.86 ^ _8971_/A1 (sky130_fd_sc_hd__a31oi_4)
+                  0.12    0.16   10.02 v _8971_/Y (sky130_fd_sc_hd__a31oi_4)
+     3    0.02                           _3924_ (net)
+                  0.12    0.00   10.02 v _9021_/A2 (sky130_fd_sc_hd__o41a_1)
+                  0.12    0.52   10.54 v _9021_/X (sky130_fd_sc_hd__o41a_1)
+     3    0.01                           _3976_ (net)
+                  0.12    0.00   10.54 v _9048_/A2 (sky130_fd_sc_hd__o31ai_2)
+                  0.29    0.34   10.88 ^ _9048_/Y (sky130_fd_sc_hd__o31ai_2)
+     2    0.01                           _4004_ (net)
+                  0.29    0.00   10.88 ^ _9049_/B (sky130_fd_sc_hd__xor2_1)
+                  0.18    0.23   11.11 ^ _9049_/X (sky130_fd_sc_hd__xor2_1)
+     1    0.01                           _0074_ (net)
+                  0.18    0.00   11.11 ^ _9111_/D (sky130_fd_sc_hd__dfxtp_2)
+                                 11.11   data arrival time
+
+                         10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock source latency
+                  0.21    0.14   10.14 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00   10.14 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.17   10.31 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00   10.31 ^ clkbuf_1_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.18   10.49 ^ clkbuf_1_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_0_0_clk (net)
+                  0.16    0.00   10.49 ^ clkbuf_2_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16   10.65 ^ clkbuf_2_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_2_0_0_clk (net)
+                  0.08    0.00   10.65 ^ clkbuf_3_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.06    0.12   10.77 ^ clkbuf_3_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_0_0_clk (net)
+                  0.06    0.00   10.77 ^ clkbuf_4_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.27    0.25   11.02 ^ clkbuf_4_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    15    0.05                           clknet_4_1_0_clk (net)
+                  0.27    0.00   11.02 ^ _9111_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                         -0.25   10.77   clock uncertainty
+                          0.03   10.80   clock reconvergence pessimism
+                         -0.05   10.75   library setup time
+                                 10.75   data required time
+-----------------------------------------------------------------------------
+                                 10.75   data required time
+                                -11.11   data arrival time
+-----------------------------------------------------------------------------
+                                 -0.36   slack (VIOLATED)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+Startpoint: _9195_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _9111_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+                  0.21    0.15    0.15 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00    0.15 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.19    0.34 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00    0.34 ^ clkbuf_1_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.14    0.18    0.52 ^ clkbuf_1_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_1_0_clk (net)
+                  0.14    0.00    0.52 ^ clkbuf_2_2_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.20    0.72 ^ clkbuf_2_2_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.02                           clknet_2_2_0_clk (net)
+                  0.11    0.00    0.72 ^ clkbuf_3_5_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.07    0.16    0.88 ^ clkbuf_3_5_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_5_0_clk (net)
+                  0.07    0.00    0.88 ^ clkbuf_4_10_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.28    0.30    1.18 ^ clkbuf_4_10_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    13    0.05                           clknet_4_10_0_clk (net)
+                  0.28    0.00    1.18 ^ _9195_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.06    0.44    1.61 v _9195_/Q (sky130_fd_sc_hd__dfxtp_2)
+     2    0.02                           P1[34] (net)
+                  0.06    0.00    1.62 v _5806_/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16    1.78 v _5806_/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.02                           _0522_ (net)
+                  0.08    0.00    1.78 v _5807_/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.08    0.21    1.99 v _5807_/X (sky130_fd_sc_hd__clkbuf_4)
+     5    0.03                           _0523_ (net)
+                  0.08    0.00    1.99 v _5810_/A1 (sky130_fd_sc_hd__a22o_1)
+                  0.06    0.25    2.23 v _5810_/X (sky130_fd_sc_hd__a22o_1)
+     2    0.01                           _0526_ (net)
+                  0.06    0.00    2.23 v _5857_/A3 (sky130_fd_sc_hd__a32o_1)
+                  0.07    0.30    2.54 v _5857_/X (sky130_fd_sc_hd__a32o_1)
+     2    0.01                           _0573_ (net)
+                  0.07    0.00    2.54 v _5858_/C (sky130_fd_sc_hd__and3_1)
+                  0.06    0.23    2.76 v _5858_/X (sky130_fd_sc_hd__and3_1)
+     2    0.01                           _0574_ (net)
+                  0.06    0.00    2.76 v _5860_/A_N (sky130_fd_sc_hd__and2b_1)
+                  0.10    0.25    3.01 ^ _5860_/X (sky130_fd_sc_hd__and2b_1)
+     1    0.01                           _0576_ (net)
+                  0.10    0.00    3.01 ^ _5861_/B (sky130_fd_sc_hd__xor2_2)
+                  0.09    0.11    3.12 v _5861_/X (sky130_fd_sc_hd__xor2_2)
+     2    0.01                           _0577_ (net)
+                  0.09    0.00    3.12 v _5863_/A (sky130_fd_sc_hd__or3_1)
+                  0.10    0.44    3.57 v _5863_/X (sky130_fd_sc_hd__or3_1)
+     2    0.01                           _0579_ (net)
+                  0.10    0.00    3.57 v _5898_/B (sky130_fd_sc_hd__and3b_1)
+                  0.08    0.24    3.80 v _5898_/X (sky130_fd_sc_hd__and3b_1)
+     2    0.01                           _0614_ (net)
+                  0.08    0.00    3.80 v _5931_/A2 (sky130_fd_sc_hd__o211ai_4)
+                  0.23    0.25    4.05 ^ _5931_/Y (sky130_fd_sc_hd__o211ai_4)
+     5    0.02                           _0647_ (net)
+                  0.23    0.00    4.05 ^ _5934_/C_N (sky130_fd_sc_hd__or4bb_4)
+                  0.10    0.62    4.67 v _5934_/X (sky130_fd_sc_hd__or4bb_4)
+     5    0.01                           _0650_ (net)
+                  0.10    0.00    4.67 v _6047_/A (sky130_fd_sc_hd__or4_1)
+                  0.10    0.59    5.26 v _6047_/X (sky130_fd_sc_hd__or4_1)
+     2    0.01                           _0761_ (net)
+                  0.10    0.00    5.26 v _6048_/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.10    0.23    5.50 v _6048_/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     5    0.02                           _0762_ (net)
+                  0.10    0.00    5.50 v _6049_/D (sky130_fd_sc_hd__and4bb_1)
+                  0.06    0.26    5.75 v _6049_/X (sky130_fd_sc_hd__and4bb_1)
+     2    0.01                           _0763_ (net)
+                  0.06    0.00    5.75 v _6129_/D1 (sky130_fd_sc_hd__a2111o_1)
+                  0.09    0.34    6.09 v _6129_/X (sky130_fd_sc_hd__a2111o_1)
+     2    0.01                           _0841_ (net)
+                  0.09    0.00    6.09 v _6217_/A1 (sky130_fd_sc_hd__a21o_1)
+                  0.08    0.23    6.31 v _6217_/X (sky130_fd_sc_hd__a21o_1)
+     4    0.01                           _0929_ (net)
+                  0.08    0.00    6.31 v _6384_/A2 (sky130_fd_sc_hd__a311oi_2)
+                  0.29    0.34    6.65 ^ _6384_/Y (sky130_fd_sc_hd__a311oi_2)
+     2    0.01                           _1108_ (net)
+                  0.29    0.00    6.65 ^ _6477_/A1 (sky130_fd_sc_hd__o21ai_1)
+                  0.13    0.20    6.85 v _6477_/Y (sky130_fd_sc_hd__o21ai_1)
+     3    0.01                           _1210_ (net)
+                  0.13    0.00    6.85 v _6559_/A1 (sky130_fd_sc_hd__a21oi_2)
+                  0.16    0.21    7.06 ^ _6559_/Y (sky130_fd_sc_hd__a21oi_2)
+     3    0.01                           _1299_ (net)
+                  0.16    0.00    7.06 ^ _6650_/A1 (sky130_fd_sc_hd__o21ai_1)
+                  0.14    0.16    7.23 v _6650_/Y (sky130_fd_sc_hd__o21ai_1)
+     3    0.01                           _1398_ (net)
+                  0.14    0.00    7.23 v _7067_/A2 (sky130_fd_sc_hd__a211o_1)
+                  0.08    0.38    7.61 v _7067_/X (sky130_fd_sc_hd__a211o_1)
+     2    0.01                           _1852_ (net)
+                  0.08    0.00    7.61 v _7554_/A1 (sky130_fd_sc_hd__a311o_2)
+                  0.09    0.40    8.01 v _7554_/X (sky130_fd_sc_hd__a311o_2)
+     2    0.02                           _2384_ (net)
+                  0.09    0.00    8.01 v _7676_/A2 (sky130_fd_sc_hd__a21oi_4)
+                  0.26    0.30    8.31 ^ _7676_/Y (sky130_fd_sc_hd__a21oi_4)
+     4    0.03                           _2518_ (net)
+                  0.26    0.00    8.31 ^ _8023_/A2 (sky130_fd_sc_hd__o311ai_4)
+                  0.13    0.18    8.49 v _8023_/Y (sky130_fd_sc_hd__o311ai_4)
+     3    0.02                           _2895_ (net)
+                  0.13    0.00    8.49 v _8127_/A2 (sky130_fd_sc_hd__a311oi_4)
+                  0.37    0.43    8.92 ^ _8127_/Y (sky130_fd_sc_hd__a311oi_4)
+     4    0.02                           _3009_ (net)
+                  0.37    0.00    8.92 ^ _8428_/A2 (sky130_fd_sc_hd__o311ai_4)
+                  0.11    0.16    9.08 v _8428_/Y (sky130_fd_sc_hd__o311ai_4)
+     3    0.01                           _3336_ (net)
+                  0.11    0.00    9.08 v _8650_/A1 (sky130_fd_sc_hd__a2111o_1)
+                  0.12    0.48    9.56 v _8650_/X (sky130_fd_sc_hd__a2111o_1)
+     3    0.02                           _3577_ (net)
+                  0.12    0.00    9.56 v _8774_/A1 (sky130_fd_sc_hd__a22oi_4)
+                  0.25    0.30    9.86 ^ _8774_/Y (sky130_fd_sc_hd__a22oi_4)
+     4    0.03                           _3712_ (net)
+                  0.25    0.00    9.86 ^ _8971_/A1 (sky130_fd_sc_hd__a31oi_4)
+                  0.12    0.16   10.02 v _8971_/Y (sky130_fd_sc_hd__a31oi_4)
+     3    0.02                           _3924_ (net)
+                  0.12    0.00   10.02 v _9021_/A2 (sky130_fd_sc_hd__o41a_1)
+                  0.12    0.52   10.54 v _9021_/X (sky130_fd_sc_hd__o41a_1)
+     3    0.01                           _3976_ (net)
+                  0.12    0.00   10.54 v _9048_/A2 (sky130_fd_sc_hd__o31ai_2)
+                  0.29    0.34   10.88 ^ _9048_/Y (sky130_fd_sc_hd__o31ai_2)
+     2    0.01                           _4004_ (net)
+                  0.29    0.00   10.88 ^ _9049_/B (sky130_fd_sc_hd__xor2_1)
+                  0.18    0.23   11.11 ^ _9049_/X (sky130_fd_sc_hd__xor2_1)
+     1    0.01                           _0074_ (net)
+                  0.18    0.00   11.11 ^ _9111_/D (sky130_fd_sc_hd__dfxtp_2)
+                                 11.11   data arrival time
+
+                         10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock source latency
+                  0.21    0.14   10.14 ^ clk (in)
+     1    0.05                           clk (net)
+                  0.21    0.00   10.14 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.04    0.17   10.31 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           clknet_0_clk (net)
+                  0.04    0.00   10.31 ^ clkbuf_1_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.18   10.49 ^ clkbuf_1_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.03                           clknet_1_0_0_clk (net)
+                  0.16    0.00   10.49 ^ clkbuf_2_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16   10.65 ^ clkbuf_2_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_2_0_0_clk (net)
+                  0.08    0.00   10.65 ^ clkbuf_3_0_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.06    0.12   10.77 ^ clkbuf_3_0_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+     2    0.01                           clknet_3_0_0_clk (net)
+                  0.06    0.00   10.77 ^ clkbuf_4_1_0_clk/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.27    0.25   11.02 ^ clkbuf_4_1_0_clk/X (sky130_fd_sc_hd__clkbuf_2)
+    15    0.05                           clknet_4_1_0_clk (net)
+                  0.27    0.00   11.02 ^ _9111_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                         -0.25   10.77   clock uncertainty
+                          0.03   10.80   clock reconvergence pessimism
+                         -0.05   10.75   library setup time
+                                 10.75   data required time
+-----------------------------------------------------------------------------
+                                 10.75   data required time
+                                -11.11   data arrival time
+-----------------------------------------------------------------------------
+                                 -0.36   slack (VIOLATED)
+
+
+check_report_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns -0.79
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns -0.36
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack -0.36
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack 0.13
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+Clock clk
+Latency      CRPR       Skew
+_9102_/CLK ^
+   1.24
+_9133_/CLK ^
+   1.01     -0.03       0.20
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power
+----------------------------------------------------------------
+Sequential             1.43e-03   8.52e-04   1.35e-09   2.28e-03   6.9%
+Combinational          1.24e-02   1.85e-02   1.77e-08   3.10e-02  93.1%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.38e-02   1.94e-02   1.91e-08   3.32e-02 100.0%
+                          41.6%      58.4%       0.0%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 40678 u^2 49% utilization.
+area_report_end

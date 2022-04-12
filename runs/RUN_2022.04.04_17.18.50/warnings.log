@@ -1,0 +1,6 @@
+[WARNING]: You're using FP_IO_HMETAL in your configuration, which is a deprecated variable that will be removed in the future.
+[WARNING]: We recommend you update your configuration as follows:
+[WARNING]: 	set ::env(FP_IO_HLAYER) {met3}
+[WARNING]: You're using FP_IO_VMETAL in your configuration, which is a deprecated variable that will be removed in the future.
+[WARNING]: We recommend you update your configuration as follows:
+[WARNING]: 	set ::env(FP_IO_VLAYER) {met2}

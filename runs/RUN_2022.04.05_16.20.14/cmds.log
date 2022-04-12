@@ -1,0 +1,20 @@
+Tue Apr 05 16:20:15 UTC 2022 - Executing "/openlane/scripts/mergeLef.py -i /home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef /home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -o /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_16.20.14/tmp/merged_unpadded.lef |& tee /dev/null"
+
+Tue Apr 05 16:20:15 UTC 2022 - Executing "openroad -python /openlane/scripts/mergeLib.py --output /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_16.20.14/tmp/synthesis/merged.lib --name sky130A_merged /home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Tue Apr 05 16:20:15 UTC 2022 - Executing "openroad -python /openlane/scripts/libtrim.py --cell-file /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_16.20.14/tmp/synthesis/trimmed.lib.exclude.list --output /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_16.20.14/tmp/synthesis/trimmed.lib /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_16.20.14/tmp/synthesis/merged.lib"
+
+Tue Apr 05 16:20:16 UTC 2022 - Executing "echo {openlane 00da77e58c86a2fa745dafc2f4b277191cb8d3ac} > /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_16.20.14/OPENLANE_VERSION"
+
+Tue Apr 05 16:20:16 UTC 2022 - Executing "openroad -python /openlane/scripts/new_tracks.py -i /home/adithi/OpenLane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_16.20.14/tmp/routing/config.tracks"
+
+Tue Apr 05 16:20:16 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_16.20.14/tmp/synthesis/0-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Tue Apr 05 16:20:16 UTC 2022 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl -l /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_16.20.14/logs/synthesis/0-synthesis.log |& tee /dev/null"
+
+Tue Apr 05 16:22:01 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.05_16.20.14\/results\/synthesis\/MULTI_32bit.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_16.20.14/config.tcl"
+
+Tue Apr 05 16:22:01 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_16.20.14/config.tcl"
+
+Tue Apr 05 16:22:01 UTC 2022 - Executing "openroad -python /openlane/scripts/synth_exp/analyze.py --output /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_16.20.14/reports/synthesis/0-exploration_analysis.html /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_16.20.14/logs/synthesis/0-synthesis.log"
+

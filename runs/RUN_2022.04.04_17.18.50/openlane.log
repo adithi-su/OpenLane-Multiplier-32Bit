@@ -1,0 +1,52 @@
+[INFO]: Current run directory is /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.18.50
+[INFO]: Preparing LEF Files...
+[INFO]: Running Synthesis...
+[INFO]: Running Static Timing Analysis...
+[INFO]: Running Initial Floorplanning...
+[INFO]: Setting Core Dimensions...
+[WARNING]: You're using FP_IO_HMETAL in your configuration, which is a deprecated variable that will be removed in the future.
+[WARNING]: We recommend you update your configuration as follows:
+[WARNING]: 	set ::env(FP_IO_HLAYER) {met3}
+[WARNING]: You're using FP_IO_VMETAL in your configuration, which is a deprecated variable that will be removed in the future.
+[WARNING]: We recommend you update your configuration as follows:
+[WARNING]: 	set ::env(FP_IO_VLAYER) {met2}
+[INFO]: Running IO Placement...
+[INFO]: Running Tap/Decap Insertion...
+[INFO]: Power planning with power {VPWR} and ground {VGND}...
+[INFO]: Generating PDN...
+[INFO]: Performing Random Global Placement...
+[INFO]: Running Resizer Design Optimizations...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/resizer.tcl
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+[INFO DPL-0035]  _7268_
+[INFO DPL-0035]  _7277_
+[INFO DPL-0035]  _7277_
+[INFO DPL-0035]  _7289_
+[INFO DPL-0035]  _7289_
+[INFO DPL-0035]  _7289_
+[INFO DPL-0035] message limit reached, this message will no longer print
+[ERROR DPL-0036] Detailed placement failed.
+Error: resizer.tcl, 79 DPL-0036
+child process exited abnormally
+
+[INFO]: Saving runtime environment...
+[INFO]: Creating reproducible...
+[INFO]: Reproducible packaged: Please tarball and upload designs/MULTI_32bit/runs/RUN_2022.04.04_17.18.50/openroad_issue_reproducible if you're going to submit an issue.
+[INFO]: Generating Final Summary Report...
+[INFO]: Design Name: MULTI_32bit
+Run Directory: /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.18.50
+Source not found.
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.18.50/logs/finishing/MULTI_32bit.lvs.lef.log
+Source not found.
+----------------------------------------
+
+Antenna Summary:
+No antenna report found.
+[INFO]: check full report here: /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.18.50/reports/final_summary_report.csv
+[INFO]: Saving runtime environment...
+[ERROR]: Flow failed.
+[INFO]: The failure may have been because of the following warnings:

@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 60258 62402
+string GDS_END 14182358
+string GDS_FILE /openlane/designs/MULTI_32bit/runs/RUN_2022.04.02_18.32.36/results/finishing/MULTI_32bit.magic.gds
+string GDS_START 994660
+<< end >>

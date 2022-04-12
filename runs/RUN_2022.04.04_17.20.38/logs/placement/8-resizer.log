@@ -1,0 +1,1242 @@
+OpenROAD 944855835623e651e7b9c7c50efcce1fb04b4fee 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/merged_unpadded.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/placement/7-global.def
+[INFO ODB-0128] Design: MULTI_32bit
+[INFO ODB-0130]     Created 100 pins.
+[INFO ODB-0131]     Created 5969 components and 37957 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 21716 connections.
+[INFO ODB-0133]     Created 4743 nets and 16241 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/MULTI_32bit/runs/RUN_2022.04.04_17.20.38/tmp/placement/7-global.def
+###############################################################################
+# Created by write_sdc
+# Mon Apr  4 17:20:57 2022
+###############################################################################
+current_design MULTI_32bit
+###############################################################################
+# Timing Constraints
+###############################################################################
+create_clock -name clk -period 10.0000 [get_ports {clk}]
+set_clock_transition 0.1500 [get_clocks {clk}]
+set_clock_uncertainty 0.2500 clk
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[0]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[10]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[11]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[12]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[13]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[14]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[15]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[16]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[17]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[18]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[19]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[1]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[20]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[21]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[22]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[23]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[24]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[25]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[26]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[27]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[28]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[29]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[2]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[30]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[31]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[3]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[4]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[5]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[6]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[7]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[8]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {A[9]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[0]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[10]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[11]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[12]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[13]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[14]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[15]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[16]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[17]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[18]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[19]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[1]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[20]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[21]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[22]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[23]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[24]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[25]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[26]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[27]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[28]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[29]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[2]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[30]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[31]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[3]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[4]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[5]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[6]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[7]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[8]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {B[9]}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {rst}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[0]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[10]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[11]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[12]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[13]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[14]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[15]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[16]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[17]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[18]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[19]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[1]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[20]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[21]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[22]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[23]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[24]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[25]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[26]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[27]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[28]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[29]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[2]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[30]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[31]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[3]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[4]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[5]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[6]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[7]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[8]}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {F[9]}]
+###############################################################################
+# Environment
+###############################################################################
+set_load -pin_load 0.0177 [get_ports {F[31]}]
+set_load -pin_load 0.0177 [get_ports {F[30]}]
+set_load -pin_load 0.0177 [get_ports {F[29]}]
+set_load -pin_load 0.0177 [get_ports {F[28]}]
+set_load -pin_load 0.0177 [get_ports {F[27]}]
+set_load -pin_load 0.0177 [get_ports {F[26]}]
+set_load -pin_load 0.0177 [get_ports {F[25]}]
+set_load -pin_load 0.0177 [get_ports {F[24]}]
+set_load -pin_load 0.0177 [get_ports {F[23]}]
+set_load -pin_load 0.0177 [get_ports {F[22]}]
+set_load -pin_load 0.0177 [get_ports {F[21]}]
+set_load -pin_load 0.0177 [get_ports {F[20]}]
+set_load -pin_load 0.0177 [get_ports {F[19]}]
+set_load -pin_load 0.0177 [get_ports {F[18]}]
+set_load -pin_load 0.0177 [get_ports {F[17]}]
+set_load -pin_load 0.0177 [get_ports {F[16]}]
+set_load -pin_load 0.0177 [get_ports {F[15]}]
+set_load -pin_load 0.0177 [get_ports {F[14]}]
+set_load -pin_load 0.0177 [get_ports {F[13]}]
+set_load -pin_load 0.0177 [get_ports {F[12]}]
+set_load -pin_load 0.0177 [get_ports {F[11]}]
+set_load -pin_load 0.0177 [get_ports {F[10]}]
+set_load -pin_load 0.0177 [get_ports {F[9]}]
+set_load -pin_load 0.0177 [get_ports {F[8]}]
+set_load -pin_load 0.0177 [get_ports {F[7]}]
+set_load -pin_load 0.0177 [get_ports {F[6]}]
+set_load -pin_load 0.0177 [get_ports {F[5]}]
+set_load -pin_load 0.0177 [get_ports {F[4]}]
+set_load -pin_load 0.0177 [get_ports {F[3]}]
+set_load -pin_load 0.0177 [get_ports {F[2]}]
+set_load -pin_load 0.0177 [get_ports {F[1]}]
+set_load -pin_load 0.0177 [get_ports {F[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {clk}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {rst}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[31]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[30]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[29]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[28]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[27]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[26]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[25]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[24]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[23]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[22]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[21]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[20]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[19]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[18]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[17]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[16]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[15]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[14]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[13]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[12]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[11]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[10]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[9]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[8]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[7]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[6]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[5]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[4]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {A[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[31]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[30]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[29]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[28]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[27]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[26]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[25]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[24]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[23]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[22]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[21]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[20]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[19]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[18]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[17]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[16]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[15]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[14]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[13]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[12]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[11]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[10]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[9]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[8]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[7]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[6]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[5]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[4]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {B[0]}]
+set_timing_derate -early 0.9500
+set_timing_derate -late 1.0500
+###############################################################################
+# Design Rules
+###############################################################################
+set_max_fanout 5.0000 [current_design]
+[INFO]: Setting RC values...
+[INFO RSZ-0027] Inserted 64 input buffers.
+[INFO RSZ-0028] Inserted 32 output buffers.
+[INFO RSZ-0058] Using max wire length 2319um.
+[INFO RSZ-0034] Found 5 slew violations.
+[INFO RSZ-0036] Found 5 capacitance violations.
+[INFO RSZ-0038] Inserted 6 buffers in 5 nets.
+[INFO RSZ-0039] Resized 4370 instances.
+[INFO DPL-0034] Detailed placement failed on:
+[INFO DPL-0035]  _6709_
+[INFO DPL-0035]  _6709_
+[INFO DPL-0035]  _6722_
+[INFO DPL-0035]  _6722_
+[INFO DPL-0035]  _6741_
+[INFO DPL-0035]  _6741_
+[INFO DPL-0035]  _6741_
+[INFO DPL-0035]  _6741_
+[INFO DPL-0035]  _6773_
+[INFO DPL-0035]  _6773_
+[INFO DPL-0035]  _6773_
+[INFO DPL-0035]  _6780_
+[INFO DPL-0035]  _6780_
+[INFO DPL-0035]  _6780_
+[INFO DPL-0035]  _6780_
+[INFO DPL-0035]  _6780_
+[INFO DPL-0035]  _6860_
+[INFO DPL-0035]  _6874_
+[INFO DPL-0035]  _6874_
+[INFO DPL-0035]  _6900_
+[INFO DPL-0035]  _6900_
+[INFO DPL-0035]  _6924_
+[INFO DPL-0035]  _6924_
+[INFO DPL-0035]  _6924_
+[INFO DPL-0035]  _6981_
+[INFO DPL-0035]  _6981_
+[INFO DPL-0035]  _7003_
+[INFO DPL-0035]  _7003_
+[INFO DPL-0035]  _7052_
+[INFO DPL-0035]  _7052_
+[INFO DPL-0035]  _7052_
+[INFO DPL-0035]  _7052_
+[INFO DPL-0035]  _7108_
+[INFO DPL-0035]  _7108_
+[INFO DPL-0035]  _7117_
+[INFO DPL-0035]  _7117_
+[INFO DPL-0035]  _7117_
+[INFO DPL-0035]  _7129_
+[INFO DPL-0035]  _7129_
+[INFO DPL-0035]  _7151_
+[INFO DPL-0035]  _7151_
+[INFO DPL-0035]  _7151_
+[INFO DPL-0035]  _7192_
+[INFO DPL-0035]  _7192_
+[INFO DPL-0035]  _7244_
+[INFO DPL-0035]  _7244_
+[INFO DPL-0035]  _7281_
+[INFO DPL-0035]  _7281_
+[INFO DPL-0035]  _7281_
+[INFO DPL-0035]  _7281_
+[INFO DPL-0035]  _7326_
+[INFO DPL-0035]  _7326_
+[INFO DPL-0035]  _7336_
+[INFO DPL-0035]  _7359_
+[INFO DPL-0035]  _7359_
+[INFO DPL-0035]  _7405_
+[INFO DPL-0035]  _7405_
+[INFO DPL-0035]  _7405_
+[INFO DPL-0035]  _7405_
+[INFO DPL-0035]  _7405_
+[INFO DPL-0035]  _7488_
+[INFO DPL-0035]  _7488_
+[INFO DPL-0035]  _7497_
+[INFO DPL-0035]  _7497_
+[INFO DPL-0035]  _7506_
+[INFO DPL-0035]  _7508_
+[INFO DPL-0035]  _7508_
+[INFO DPL-0035]  _7508_
+[INFO DPL-0035]  _7532_
+[INFO DPL-0035]  _7532_
+[INFO DPL-0035]  _7559_
+[INFO DPL-0035]  _7559_
+[INFO DPL-0035]  _7559_
+[INFO DPL-0035]  _7571_
+[INFO DPL-0035]  _7587_
+[INFO DPL-0035]  _7587_
+[INFO DPL-0035]  _7587_
+[INFO DPL-0035]  _7636_
+[INFO DPL-0035]  _7636_
+[INFO DPL-0035]  _7636_
+[INFO DPL-0035]  _7659_
+[INFO DPL-0035]  _7659_
+[INFO DPL-0035]  _7661_
+[INFO DPL-0035]  _7678_
+[INFO DPL-0035]  _7689_
+[INFO DPL-0035]  _7689_
+[INFO DPL-0035]  _7729_
+[INFO DPL-0035]  _7729_
+[INFO DPL-0035]  _7729_
+[INFO DPL-0035]  _7751_
+[INFO DPL-0035]  _7751_
+[INFO DPL-0035]  _7766_
+[INFO DPL-0035]  _7766_
+[INFO DPL-0035]  _7766_
+[INFO DPL-0035]  _7776_
+[INFO DPL-0035]  _7776_
+[INFO DPL-0035]  _7809_
+[INFO DPL-0035]  _7809_
+[INFO DPL-0035]  _7809_
+[INFO DPL-0035]  _7861_
+[INFO DPL-0035]  _7861_
+[INFO DPL-0035]  _7875_
+[INFO DPL-0035]  _7875_
+[INFO DPL-0035]  _7889_
+[INFO DPL-0035]  _7889_
+[INFO DPL-0035]  _7889_
+[INFO DPL-0035]  _7928_
+[INFO DPL-0035]  _7928_
+[INFO DPL-0035]  _7945_
+[INFO DPL-0035]  _7988_
+[INFO DPL-0035]  _7988_
+[INFO DPL-0035]  _7988_
+[INFO DPL-0035]  _8016_
+[INFO DPL-0035]  _8022_
+[INFO DPL-0035]  _8022_
+[INFO DPL-0035]  _8022_
+[INFO DPL-0035]  _8069_
+[INFO DPL-0035]  _8069_
+[INFO DPL-0035]  _8093_
+[INFO DPL-0035]  _8133_
+[INFO DPL-0035]  _8133_
+[INFO DPL-0035]  _8133_
+[INFO DPL-0035]  _8165_
+[INFO DPL-0035]  _8177_
+[INFO DPL-0035]  _8177_
+[INFO DPL-0035]  _8177_
+[INFO DPL-0035]  _8177_
+[INFO DPL-0035]  _8177_
+[INFO DPL-0035]  _8220_
+[INFO DPL-0035]  _8220_
+[INFO DPL-0035]  _8255_
+[INFO DPL-0035]  _8255_
+[INFO DPL-0035]  _8255_
+[INFO DPL-0035]  _8255_
+[INFO DPL-0035]  _8302_
+[INFO DPL-0035]  _8302_
+[INFO DPL-0035]  _8302_
+[INFO DPL-0035]  _8387_
+[INFO DPL-0035]  _8391_
+[INFO DPL-0035]  _8397_
+[INFO DPL-0035]  _8397_
+[INFO DPL-0035]  _8443_
+[INFO DPL-0035]  _8443_
+[INFO DPL-0035]  _8443_
+[INFO DPL-0035]  _8468_
+[INFO DPL-0035]  _8468_
+[INFO DPL-0035]  _8468_
+[INFO DPL-0035]  _8513_
+[INFO DPL-0035]  _8513_
+[INFO DPL-0035]  _8513_
+[INFO DPL-0035]  _8513_
+[INFO DPL-0035]  _8534_
+[INFO DPL-0035]  _8534_
+[INFO DPL-0035]  _8534_
+[INFO DPL-0035]  _8534_
+[INFO DPL-0035]  _8559_
+[INFO DPL-0035]  _8559_
+[INFO DPL-0035]  _8559_
+[INFO DPL-0035]  _8586_
+[INFO DPL-0035]  _8596_
+[INFO DPL-0035]  _8596_
+[INFO DPL-0035]  _8596_
+[INFO DPL-0035]  _8624_
+[INFO DPL-0035]  _8640_
+[INFO DPL-0035]  _8640_
+[INFO DPL-0035]  _8657_
+[INFO DPL-0035]  _8657_
+[INFO DPL-0035]  _8657_
+[INFO DPL-0035]  _8657_
+[INFO DPL-0035]  _8668_
+[INFO DPL-0035]  _8670_
+[INFO DPL-0035]  _8670_
+[INFO DPL-0035]  _8670_
+[INFO DPL-0035]  _8726_
+[INFO DPL-0035]  _8751_
+[INFO DPL-0035]  _8800_
+[INFO DPL-0035]  _8800_
+[INFO DPL-0035]  _8820_
+[INFO DPL-0035]  _8820_
+[INFO DPL-0035]  _8820_
+[INFO DPL-0035]  _8845_
+[INFO DPL-0035]  _8845_
+[INFO DPL-0035]  _8867_
+[INFO DPL-0035]  _8867_
+[INFO DPL-0035]  _8908_
+[INFO DPL-0035]  _8908_
+[INFO DPL-0035]  _8908_
+[INFO DPL-0035]  _8908_
+[INFO DPL-0035]  _8908_
+[INFO DPL-0035]  _8928_
+[INFO DPL-0035]  _8933_
+[INFO DPL-0035]  _8971_
+[INFO DPL-0035]  _8971_
+[INFO DPL-0035]  _8971_
+[INFO DPL-0035]  _9001_
+[INFO DPL-0035]  _9010_
+[INFO DPL-0035]  _9015_
+[INFO DPL-0035]  _9015_
+[INFO DPL-0035]  _5011_
+[INFO DPL-0035]  _5011_
+[INFO DPL-0035]  _5027_
+[INFO DPL-0035]  _5027_
+[INFO DPL-0035]  _5027_
+[INFO DPL-0035]  _5032_
+[INFO DPL-0035]  _5032_
+[INFO DPL-0035]  _5032_
+[INFO DPL-0035]  _5099_
+[INFO DPL-0035]  _5099_
+[INFO DPL-0035]  _5099_
+[INFO DPL-0035]  _5109_
+[INFO DPL-0035]  _5109_
+[INFO DPL-0035]  _5120_
+[INFO DPL-0035]  _5125_
+[INFO DPL-0035]  _5125_
+[INFO DPL-0035]  _5125_
+[INFO DPL-0035]  _5128_
+[INFO DPL-0035]  _5128_
+[INFO DPL-0035]  _5128_
+[INFO DPL-0035]  _5128_
+[INFO DPL-0035]  _5128_
+[INFO DPL-0035]  _5174_
+[INFO DPL-0035]  _5174_
+[INFO DPL-0035]  _5174_
+[INFO DPL-0035]  _5178_
+[INFO DPL-0035]  _5178_
+[INFO DPL-0035]  _5178_
+[INFO DPL-0035]  _5178_
+[INFO DPL-0035]  _5182_
+[INFO DPL-0035]  _5182_
+[INFO DPL-0035]  _5211_
+[INFO DPL-0035]  _5211_
+[INFO DPL-0035]  _5217_
+[INFO DPL-0035]  _5217_
+[INFO DPL-0035]  _5265_
+[INFO DPL-0035]  _5265_
+[INFO DPL-0035]  _5265_
+[INFO DPL-0035]  _5265_
+[INFO DPL-0035]  _5293_
+[INFO DPL-0035]  _5293_
+[INFO DPL-0035]  _5293_
+[INFO DPL-0035]  _5308_
+[INFO DPL-0035]  _5308_
+[INFO DPL-0035]  _5310_
+[INFO DPL-0035]  _5313_
+[INFO DPL-0035]  _5313_
+[INFO DPL-0035]  _5313_
+[INFO DPL-0035]  _5313_
+[INFO DPL-0035]  _5334_
+[INFO DPL-0035]  _5334_
+[INFO DPL-0035]  _5341_
+[INFO DPL-0035]  _5341_
+[INFO DPL-0035]  _5341_
+[INFO DPL-0035]  _5345_
+[INFO DPL-0035]  _5345_
+[INFO DPL-0035]  _5383_
+[INFO DPL-0035]  _5383_
+[INFO DPL-0035]  _5433_
+[INFO DPL-0035]  _5433_
+[INFO DPL-0035]  _5433_
+[INFO DPL-0035]  _5433_
+[INFO DPL-0035]  _5506_
+[INFO DPL-0035]  _5506_
+[INFO DPL-0035]  _5537_
+[INFO DPL-0035]  _5537_
+[INFO DPL-0035]  _5581_
+[INFO DPL-0035]  _5581_
+[INFO DPL-0035]  _5608_
+[INFO DPL-0035]  _5608_
+[INFO DPL-0035]  _5608_
+[INFO DPL-0035]  _5614_
+[INFO DPL-0035]  _5614_
+[INFO DPL-0035]  _5661_
+[INFO DPL-0035]  _5661_
+[INFO DPL-0035]  _5661_
+[INFO DPL-0035]  _5661_
+[INFO DPL-0035]  _5677_
+[INFO DPL-0035]  _5677_
+[INFO DPL-0035]  _5677_
+[INFO DPL-0035]  _5677_
+[INFO DPL-0035]  _5692_
+[INFO DPL-0035]  _5707_
+[INFO DPL-0035]  _5716_
+[INFO DPL-0035]  _5716_
+[INFO DPL-0035]  _5720_
+[INFO DPL-0035]  _5720_
+[INFO DPL-0035]  _5752_
+[INFO DPL-0035]  _5752_
+[INFO DPL-0035]  _5752_
+[INFO DPL-0035]  _5770_
+[INFO DPL-0035]  _5770_
+[INFO DPL-0035]  _5770_
+[INFO DPL-0035]  _5770_
+[INFO DPL-0035]  _5770_
+[INFO DPL-0035]  _5801_
+[INFO DPL-0035]  _5815_
+[INFO DPL-0035]  _5815_
+[INFO DPL-0035]  _5815_
+[INFO DPL-0035]  _5815_
+[INFO DPL-0035]  _5828_
+[INFO DPL-0035]  _5865_
+[INFO DPL-0035]  _5876_
+[INFO DPL-0035]  _5876_
+[INFO DPL-0035]  _5876_
+[INFO DPL-0035]  _5881_
+[INFO DPL-0035]  _5884_
+[INFO DPL-0035]  _5884_
+[INFO DPL-0035]  _5884_
+[INFO DPL-0035]  _5884_
+[INFO DPL-0035]  _5884_
+[INFO DPL-0035]  _5896_
+[INFO DPL-0035]  _5896_
+[INFO DPL-0035]  _5896_
+[INFO DPL-0035]  _5896_
+[INFO DPL-0035]  _5916_
+[INFO DPL-0035]  _5916_
+[INFO DPL-0035]  _5916_
+[INFO DPL-0035]  _5934_
+[INFO DPL-0035]  _5934_
+[INFO DPL-0035]  _5934_
+[INFO DPL-0035]  _5934_
+[INFO DPL-0035]  _5968_
+[INFO DPL-0035]  _5979_
+[INFO DPL-0035]  _5992_
+[INFO DPL-0035]  _5992_
+[INFO DPL-0035]  _6013_
+[INFO DPL-0035]  _6013_
+[INFO DPL-0035]  _6013_
+[INFO DPL-0035]  _6032_
+[INFO DPL-0035]  _6032_
+[INFO DPL-0035]  _6057_
+[INFO DPL-0035]  _6069_
+[INFO DPL-0035]  _6091_
+[INFO DPL-0035]  _6109_
+[INFO DPL-0035]  _6109_
+[INFO DPL-0035]  _6109_
+[INFO DPL-0035]  _6126_
+[INFO DPL-0035]  _6140_
+[INFO DPL-0035]  _6143_
+[INFO DPL-0035]  _6143_
+[INFO DPL-0035]  _6143_
+[INFO DPL-0035]  _6143_
+[INFO DPL-0035]  _6171_
+[INFO DPL-0035]  _6179_
+[INFO DPL-0035]  _6179_
+[INFO DPL-0035]  _6179_
+[INFO DPL-0035]  _6179_
+[INFO DPL-0035]  _6187_
+[INFO DPL-0035]  _6187_
+[INFO DPL-0035]  _6190_
+[INFO DPL-0035]  _6190_
+[INFO DPL-0035]  _6202_
+[INFO DPL-0035]  _6202_
+[INFO DPL-0035]  _6202_
+[INFO DPL-0035]  _6239_
+[INFO DPL-0035]  _6239_
+[INFO DPL-0035]  _6239_
+[INFO DPL-0035]  _6257_
+[INFO DPL-0035]  _6257_
+[INFO DPL-0035]  _6302_
+[INFO DPL-0035]  _6302_
+[INFO DPL-0035]  _6302_
+[INFO DPL-0035]  _6302_
+[INFO DPL-0035]  _6327_
+[INFO DPL-0035]  _6327_
+[INFO DPL-0035]  _6361_
+[INFO DPL-0035]  _6363_
+[INFO DPL-0035]  _6367_
+[INFO DPL-0035]  _6367_
+[INFO DPL-0035]  _6367_
+[INFO DPL-0035]  _6381_
+[INFO DPL-0035]  _6381_
+[INFO DPL-0035]  _6410_
+[INFO DPL-0035]  _6410_
+[INFO DPL-0035]  _6415_
+[INFO DPL-0035]  _6415_
+[INFO DPL-0035]  _6415_
+[INFO DPL-0035]  _6477_
+[INFO DPL-0035]  _6511_
+[INFO DPL-0035]  _6523_
+[INFO DPL-0035]  _6523_
+[INFO DPL-0035]  _6598_
+[INFO DPL-0035]  _6598_
+[INFO DPL-0035]  _6598_
+[INFO DPL-0035]  _6598_
+[INFO DPL-0035]  _6601_
+[INFO DPL-0035]  _6636_
+[INFO DPL-0035]  _6636_
+[INFO DPL-0035]  _6636_
+[INFO DPL-0035]  _6712_
+[INFO DPL-0035]  _6712_
+[INFO DPL-0035]  _6712_
+[INFO DPL-0035]  _6765_
+[INFO DPL-0035]  _6765_
+[INFO DPL-0035]  _6765_
+[INFO DPL-0035]  _6793_
+[INFO DPL-0035]  _6835_
+[INFO DPL-0035]  _6835_
+[INFO DPL-0035]  _6835_
+[INFO DPL-0035]  _6922_
+[INFO DPL-0035]  _6922_
+[INFO DPL-0035]  _6922_
+[INFO DPL-0035]  _6967_
+[INFO DPL-0035]  _6997_
+[INFO DPL-0035]  _6997_
+[INFO DPL-0035]  _7135_
+[INFO DPL-0035]  _7148_
+[INFO DPL-0035]  _7148_
+[INFO DPL-0035]  _7242_
+[INFO DPL-0035]  _7348_
+[INFO DPL-0035]  _7383_
+[INFO DPL-0035]  _7403_
+[INFO DPL-0035]  _7441_
+[INFO DPL-0035]  _7478_
+[INFO DPL-0035]  _7478_
+[INFO DPL-0035]  _7545_
+[INFO DPL-0035]  _7545_
+[INFO DPL-0035]  _7605_
+[INFO DPL-0035]  _7605_
+[INFO DPL-0035]  _7605_
+[INFO DPL-0035]  _7605_
+[INFO DPL-0035]  _7685_
+[INFO DPL-0035]  _7685_
+[INFO DPL-0035]  _7685_
+[INFO DPL-0035]  _7730_
+[INFO DPL-0035]  _7730_
+[INFO DPL-0035]  _7730_
+[INFO DPL-0035]  _7742_
+[INFO DPL-0035]  _7742_
+[INFO DPL-0035]  _7810_
+[INFO DPL-0035]  _7856_
+[INFO DPL-0035]  _7856_
+[INFO DPL-0035]  _7856_
+[INFO DPL-0035]  _7887_
+[INFO DPL-0035]  _7918_
+[INFO DPL-0035]  _7918_
+[INFO DPL-0035]  _7918_
+[INFO DPL-0035]  _7918_
+[INFO DPL-0035]  _7936_
+[INFO DPL-0035]  _7936_
+[INFO DPL-0035]  _7951_
+[INFO DPL-0035]  _7951_
+[INFO DPL-0035]  _7973_
+[INFO DPL-0035]  _7973_
+[INFO DPL-0035]  _8058_
+[INFO DPL-0035]  _8146_
+[INFO DPL-0035]  _8146_
+[INFO DPL-0035]  _8159_
+[INFO DPL-0035]  _8159_
+[INFO DPL-0035]  _8270_
+[INFO DPL-0035]  _8270_
+[INFO DPL-0035]  _8270_
+[INFO DPL-0035]  _8270_
+[INFO DPL-0035]  _8310_
+[INFO DPL-0035]  _8310_
+[INFO DPL-0035]  _8420_
+[INFO DPL-0035]  _8626_
+[INFO DPL-0035]  _8626_
+[INFO DPL-0035]  _8626_
+[INFO DPL-0035]  _8685_
+[INFO DPL-0035]  _8685_
+[INFO DPL-0035]  _8758_
+[INFO DPL-0035]  _8758_
+[INFO DPL-0035]  _8758_
+[INFO DPL-0035]  _8854_
+[INFO DPL-0035]  _8854_
+[INFO DPL-0035]  _8854_
+[INFO DPL-0035]  _8895_
+[INFO DPL-0035]  _5541_
+[INFO DPL-0035]  _5554_
+[INFO DPL-0035]  _5554_
+[INFO DPL-0035]  _5554_
+[INFO DPL-0035]  _5554_
+[INFO DPL-0035]  _5554_
+[INFO DPL-0035]  _5578_
+[INFO DPL-0035]  _5578_
+[INFO DPL-0035]  _5578_
+[INFO DPL-0035]  _5606_
+[INFO DPL-0035]  _5610_
+[INFO DPL-0035]  _5610_
+[INFO DPL-0035]  _5610_
+[INFO DPL-0035]  _5610_
+[INFO DPL-0035]  _5625_
+[INFO DPL-0035]  _5629_
+[INFO DPL-0035]  _5629_
+[INFO DPL-0035]  _5629_
+[INFO DPL-0035]  _5629_
+[INFO DPL-0035]  _5629_
+[INFO DPL-0035]  _5642_
+[INFO DPL-0035]  _5642_
+[INFO DPL-0035]  _5649_
+[INFO DPL-0035]  _5649_
+[INFO DPL-0035]  _5654_
+[INFO DPL-0035]  _5654_
+[INFO DPL-0035]  _5667_
+[INFO DPL-0035]  _5667_
+[INFO DPL-0035]  _5667_
+[INFO DPL-0035]  _5679_
+[INFO DPL-0035]  _5679_
+[INFO DPL-0035]  _5679_
+[INFO DPL-0035]  _5721_
+[INFO DPL-0035]  _5721_
+[INFO DPL-0035]  _5721_
+[INFO DPL-0035]  _5727_
+[INFO DPL-0035]  _5727_
+[INFO DPL-0035]  _5727_
+[INFO DPL-0035]  _5727_
+[INFO DPL-0035]  _5727_
+[INFO DPL-0035]  _5764_
+[INFO DPL-0035]  _5764_
+[INFO DPL-0035]  _5764_
+[INFO DPL-0035]  _5795_
+[INFO DPL-0035]  _5826_
+[INFO DPL-0035]  _5832_
+[INFO DPL-0035]  _5832_
+[INFO DPL-0035]  _5839_
+[INFO DPL-0035]  _5839_
+[INFO DPL-0035]  _5839_
+[INFO DPL-0035]  _5839_
+[INFO DPL-0035]  _5873_
+[INFO DPL-0035]  _5873_
+[INFO DPL-0035]  _5873_
+[INFO DPL-0035]  _5926_
+[INFO DPL-0035]  _5926_
+[INFO DPL-0035]  _5926_
+[INFO DPL-0035]  _5926_
+[INFO DPL-0035]  _5941_
+[INFO DPL-0035]  _5941_
+[INFO DPL-0035]  _5941_
+[INFO DPL-0035]  _5941_
+[INFO DPL-0035]  _5961_
+[INFO DPL-0035]  _5961_
+[INFO DPL-0035]  _5969_
+[INFO DPL-0035]  _5969_
+[INFO DPL-0035]  _5969_
+[INFO DPL-0035]  _5969_
+[INFO DPL-0035]  _5969_
+[INFO DPL-0035]  _6007_
+[INFO DPL-0035]  _6007_
+[INFO DPL-0035]  _6007_
+[INFO DPL-0035]  _6040_
+[INFO DPL-0035]  _6040_
+[INFO DPL-0035]  _6040_
+[INFO DPL-0035]  _6061_
+[INFO DPL-0035]  _6064_
+[INFO DPL-0035]  _6064_
+[INFO DPL-0035]  _6064_
+[INFO DPL-0035]  _6064_
+[INFO DPL-0035]  _6130_
+[INFO DPL-0035]  _6130_
+[INFO DPL-0035]  _6152_
+[INFO DPL-0035]  _6152_
+[INFO DPL-0035]  _6160_
+[INFO DPL-0035]  _6160_
+[INFO DPL-0035]  _6160_
+[INFO DPL-0035]  _6160_
+[INFO DPL-0035]  _6160_
+[INFO DPL-0035]  _6160_
+[INFO DPL-0035]  _6223_
+[INFO DPL-0035]  _6223_
+[INFO DPL-0035]  _6234_
+[INFO DPL-0035]  _6234_
+[INFO DPL-0035]  _6241_
+[INFO DPL-0035]  _6241_
+[INFO DPL-0035]  _6254_
+[INFO DPL-0035]  _6254_
+[INFO DPL-0035]  _6254_
+[INFO DPL-0035]  _6254_
+[INFO DPL-0035]  _6254_
+[INFO DPL-0035]  _6304_
+[INFO DPL-0035]  _6304_
+[INFO DPL-0035]  _6304_
+[INFO DPL-0035]  _6304_
+[INFO DPL-0035]  _6320_
+[INFO DPL-0035]  _6334_
+[INFO DPL-0035]  _6334_
+[INFO DPL-0035]  _6334_
+[INFO DPL-0035]  _6334_
+[INFO DPL-0035]  _6374_
+[INFO DPL-0035]  _6374_
+[INFO DPL-0035]  _6374_
+[INFO DPL-0035]  _6374_
+[INFO DPL-0035]  _6398_
+[INFO DPL-0035]  _6398_
+[INFO DPL-0035]  _6398_
+[INFO DPL-0035]  _6398_
+[INFO DPL-0035]  _6448_
+[INFO DPL-0035]  _6448_
+[INFO DPL-0035]  _6448_
+[INFO DPL-0035]  _6465_
+[INFO DPL-0035]  _6484_
+[INFO DPL-0035]  _6484_
+[INFO DPL-0035]  _6496_
+[INFO DPL-0035]  _6496_
+[INFO DPL-0035]  _6496_
+[INFO DPL-0035]  _6496_
+[INFO DPL-0035]  _6500_
+[INFO DPL-0035]  _6500_
+[INFO DPL-0035]  _6503_
+[INFO DPL-0035]  _6503_
+[INFO DPL-0035]  _6503_
+[INFO DPL-0035]  _6535_
+[INFO DPL-0035]  _6535_
+[INFO DPL-0035]  _6535_
+[INFO DPL-0035]  _6541_
+[INFO DPL-0035]  _6541_
+[INFO DPL-0035]  _6562_
+[INFO DPL-0035]  _6562_
+[INFO DPL-0035]  _6562_
+[INFO DPL-0035]  _6562_
+[INFO DPL-0035]  _6570_
+[INFO DPL-0035]  _6570_
+[INFO DPL-0035]  _6585_
+[INFO DPL-0035]  _6597_
+[INFO DPL-0035]  _6597_
+[INFO DPL-0035]  _6597_
+[INFO DPL-0035]  _6632_
+[INFO DPL-0035]  _6632_
+[INFO DPL-0035]  _6632_
+[INFO DPL-0035]  _6632_
+[INFO DPL-0035]  _6632_
+[INFO DPL-0035]  _6641_
+[INFO DPL-0035]  _6669_
+[INFO DPL-0035]  _6669_
+[INFO DPL-0035]  _6669_
+[INFO DPL-0035]  _6669_
+[INFO DPL-0035]  _6703_
+[INFO DPL-0035]  _6703_
+[INFO DPL-0035]  _6723_
+[INFO DPL-0035]  _6723_
+[INFO DPL-0035]  _6723_
+[INFO DPL-0035]  _6723_
+[INFO DPL-0035]  _6723_
+[INFO DPL-0035]  _6740_
+[INFO DPL-0035]  _6740_
+[INFO DPL-0035]  _6740_
+[INFO DPL-0035]  _6756_
+[INFO DPL-0035]  _6756_
+[INFO DPL-0035]  _6756_
+[INFO DPL-0035]  _6782_
+[INFO DPL-0035]  _6782_
+[INFO DPL-0035]  _6782_
+[INFO DPL-0035]  _6782_
+[INFO DPL-0035]  _6805_
+[INFO DPL-0035]  _6808_
+[INFO DPL-0035]  _6808_
+[INFO DPL-0035]  _6839_
+[INFO DPL-0035]  _6839_
+[INFO DPL-0035]  _6853_
+[INFO DPL-0035]  _6853_
+[INFO DPL-0035]  _6853_
+[INFO DPL-0035]  _6864_
+[INFO DPL-0035]  _6864_
+[INFO DPL-0035]  _6893_
+[INFO DPL-0035]  _6893_
+[INFO DPL-0035]  _6893_
+[INFO DPL-0035]  _6944_
+[INFO DPL-0035]  _6944_
+[INFO DPL-0035]  _6952_
+[INFO DPL-0035]  _6952_
+[INFO DPL-0035]  _6952_
+[INFO DPL-0035]  _6968_
+[INFO DPL-0035]  _6987_
+[INFO DPL-0035]  _6987_
+[INFO DPL-0035]  _7000_
+[INFO DPL-0035]  _7000_
+[INFO DPL-0035]  _7005_
+[INFO DPL-0035]  _7005_
+[INFO DPL-0035]  _7009_
+[INFO DPL-0035]  _7047_
+[INFO DPL-0035]  _7047_
+[INFO DPL-0035]  _7056_
+[INFO DPL-0035]  _7056_
+[INFO DPL-0035]  _7056_
+[INFO DPL-0035]  _7056_
+[INFO DPL-0035]  _7085_
+[INFO DPL-0035]  _7085_
+[INFO DPL-0035]  _7085_
+[INFO DPL-0035]  _7114_
+[INFO DPL-0035]  _7118_
+[INFO DPL-0035]  _7118_
+[INFO DPL-0035]  _7118_
+[INFO DPL-0035]  _7118_
+[INFO DPL-0035]  _7139_
+[INFO DPL-0035]  _7139_
+[INFO DPL-0035]  _7145_
+[INFO DPL-0035]  _7145_
+[INFO DPL-0035]  _7145_
+[INFO DPL-0035]  _7173_
+[INFO DPL-0035]  _7196_
+[INFO DPL-0035]  _7196_
+[INFO DPL-0035]  _7196_
+[INFO DPL-0035]  _7217_
+[INFO DPL-0035]  _7217_
+[INFO DPL-0035]  _7228_
+[INFO DPL-0035]  _7228_
+[INFO DPL-0035]  _7236_
+[INFO DPL-0035]  _7236_
+[INFO DPL-0035]  _7243_
+[INFO DPL-0035]  _7243_
+[INFO DPL-0035]  _7243_
+[INFO DPL-0035]  _7243_
+[INFO DPL-0035]  _7291_
+[INFO DPL-0035]  _7291_
+[INFO DPL-0035]  _7291_
+[INFO DPL-0035]  _7300_
+[INFO DPL-0035]  _7300_
+[INFO DPL-0035]  _7308_
+[INFO DPL-0035]  _7308_
+[INFO DPL-0035]  _7311_
+[INFO DPL-0035]  _7325_
+[INFO DPL-0035]  _7325_
+[INFO DPL-0035]  _7325_
+[INFO DPL-0035]  _7339_
+[INFO DPL-0035]  _7339_
+[INFO DPL-0035]  _7339_
+[INFO DPL-0035]  _7339_
+[INFO DPL-0035]  _7341_
+[INFO DPL-0035]  _7341_
+[INFO DPL-0035]  _7363_
+[INFO DPL-0035]  _7363_
+[INFO DPL-0035]  _7377_
+[INFO DPL-0035]  _7377_
+[INFO DPL-0035]  _7377_
+[INFO DPL-0035]  _7408_
+[INFO DPL-0035]  _7408_
+[INFO DPL-0035]  _7408_
+[INFO DPL-0035]  _7433_
+[INFO DPL-0035]  _7433_
+[INFO DPL-0035]  _7444_
+[INFO DPL-0035]  _7461_
+[INFO DPL-0035]  _7461_
+[INFO DPL-0035]  _7480_
+[INFO DPL-0035]  _7480_
+[INFO DPL-0035]  _7518_
+[INFO DPL-0035]  _7527_
+[INFO DPL-0035]  _7527_
+[INFO DPL-0035]  _7572_
+[INFO DPL-0035]  _7579_
+[INFO DPL-0035]  _7579_
+[INFO DPL-0035]  _7579_
+[INFO DPL-0035]  _7610_
+[INFO DPL-0035]  _7610_
+[INFO DPL-0035]  _7610_
+[INFO DPL-0035]  _7656_
+[INFO DPL-0035]  _7658_
+[INFO DPL-0035]  _7680_
+[INFO DPL-0035]  _7680_
+[INFO DPL-0035]  _7680_
+[INFO DPL-0035]  _7680_
+[INFO DPL-0035]  _7698_
+[INFO DPL-0035]  _7698_
+[INFO DPL-0035]  _7702_
+[INFO DPL-0035]  _7719_
+[INFO DPL-0035]  _7744_
+[INFO DPL-0035]  _7744_
+[INFO DPL-0035]  _7744_
+[INFO DPL-0035]  _7758_
+[INFO DPL-0035]  _7778_
+[INFO DPL-0035]  _7784_
+[INFO DPL-0035]  _7784_
+[INFO DPL-0035]  _7796_
+[INFO DPL-0035]  _7811_
+[INFO DPL-0035]  _7823_
+[INFO DPL-0035]  _7839_
+[INFO DPL-0035]  _7862_
+[INFO DPL-0035]  _7862_
+[INFO DPL-0035]  _7868_
+[INFO DPL-0035]  _7868_
+[INFO DPL-0035]  _7868_
+[INFO DPL-0035]  _7868_
+[INFO DPL-0035]  _7915_
+[INFO DPL-0035]  _7926_
+[INFO DPL-0035]  _7934_
+[INFO DPL-0035]  _7934_
+[INFO DPL-0035]  _7964_
+[INFO DPL-0035]  _7971_
+[INFO DPL-0035]  _7971_
+[INFO DPL-0035]  _8024_
+[INFO DPL-0035]  _8024_
+[INFO DPL-0035]  _8035_
+[INFO DPL-0035]  _8052_
+[INFO DPL-0035]  _8057_
+[INFO DPL-0035]  _8057_
+[INFO DPL-0035]  _8057_
+[INFO DPL-0035]  _8103_
+[INFO DPL-0035]  _8103_
+[INFO DPL-0035]  _8130_
+[INFO DPL-0035]  _8130_
+[INFO DPL-0035]  _8148_
+[INFO DPL-0035]  _8148_
+[INFO DPL-0035]  _8170_
+[INFO DPL-0035]  _8170_
+[INFO DPL-0035]  _8176_
+[INFO DPL-0035]  _8249_
+[INFO DPL-0035]  _8250_
+[INFO DPL-0035]  _8250_
+[INFO DPL-0035]  _8294_
+[INFO DPL-0035]  _8297_
+[INFO DPL-0035]  _8297_
+[INFO DPL-0035]  _8303_
+[INFO DPL-0035]  _8303_
+[INFO DPL-0035]  _8316_
+[INFO DPL-0035]  _8321_
+[INFO DPL-0035]  _8321_
+[INFO DPL-0035]  _8326_
+[INFO DPL-0035]  _8326_
+[INFO DPL-0035]  _8367_
+[INFO DPL-0035]  _8367_
+[INFO DPL-0035]  _8377_
+[INFO DPL-0035]  _8379_
+[INFO DPL-0035]  _8379_
+[INFO DPL-0035]  _8424_
+[INFO DPL-0035]  _8424_
+[INFO DPL-0035]  _8424_
+[INFO DPL-0035]  _8424_
+[INFO DPL-0035]  _8451_
+[INFO DPL-0035]  _8469_
+[INFO DPL-0035]  _8469_
+[INFO DPL-0035]  _8487_
+[INFO DPL-0035]  _8487_
+[INFO DPL-0035]  _8487_
+[INFO DPL-0035]  _8509_
+[INFO DPL-0035]  _8509_
+[INFO DPL-0035]  _8509_
+[INFO DPL-0035]  _8526_
+[INFO DPL-0035]  _8535_
+[INFO DPL-0035]  _8552_
+[INFO DPL-0035]  _8560_
+[INFO DPL-0035]  _8560_
+[INFO DPL-0035]  _8560_
+[INFO DPL-0035]  _8584_
+[INFO DPL-0035]  _8584_
+[INFO DPL-0035]  _8587_
+[INFO DPL-0035]  _8593_
+[INFO DPL-0035]  _8593_
+[INFO DPL-0035]  _8604_
+[INFO DPL-0035]  _8604_
+[INFO DPL-0035]  _8644_
+[INFO DPL-0035]  _8644_
+[INFO DPL-0035]  _8650_
+[INFO DPL-0035]  _8650_
+[INFO DPL-0035]  _8655_
+[INFO DPL-0035]  _8655_
+[INFO DPL-0035]  _8666_
+[INFO DPL-0035]  _8666_
+[INFO DPL-0035]  _8666_
+[INFO DPL-0035]  _8697_
+[INFO DPL-0035]  _8715_
+[INFO DPL-0035]  _8717_
+[INFO DPL-0035]  _8717_
+[INFO DPL-0035]  _8740_
+[INFO DPL-0035]  _8740_
+[INFO DPL-0035]  _8740_
+[INFO DPL-0035]  _8741_
+[INFO DPL-0035]  _8741_
+[INFO DPL-0035]  _8750_
+[INFO DPL-0035]  _8750_
+[INFO DPL-0035]  _8764_
+[INFO DPL-0035]  _8777_
+[INFO DPL-0035]  _8788_
+[INFO DPL-0035]  _8802_
+[INFO DPL-0035]  _8808_
+[INFO DPL-0035]  _8808_
+[INFO DPL-0035]  _8834_
+[INFO DPL-0035]  _8834_
+[INFO DPL-0035]  _8844_
+[INFO DPL-0035]  _8875_
+[INFO DPL-0035]  _8875_
+[INFO DPL-0035]  _8875_
+[INFO DPL-0035]  _8880_
+[INFO DPL-0035]  _8883_
+[INFO DPL-0035]  _8892_
+[INFO DPL-0035]  _8892_
+[INFO DPL-0035]  _8892_
+[INFO DPL-0035]  _8892_
+[INFO DPL-0035]  _8950_
+[INFO DPL-0035]  _8950_
+[INFO DPL-0035]  _8970_
+[INFO DPL-0035]  _8970_
+[INFO DPL-0035]  _8989_
+[INFO DPL-0035]  _8989_
+[INFO DPL-0035]  _8989_
+[INFO DPL-0035]  _8997_
+[INFO DPL-0035]  _9000_
+[INFO DPL-0035]  _9008_
+[INFO DPL-0035]  _9012_
+[INFO DPL-0035]  _9012_
+[INFO DPL-0035]  _9012_
+[INFO DPL-0035]  _9026_
+[INFO DPL-0035]  input1
+[INFO DPL-0035]  input35
+[INFO DPL-0035]  input35
+[INFO DPL-0035]  repeater102
+[INFO DPL-0035]  repeater102
+[INFO DPL-0035]  _8372_
+[INFO DPL-0035]  _8403_
+[INFO DPL-0035]  _8455_
+[INFO DPL-0035]  _8536_
+[INFO DPL-0035]  _8536_
+[INFO DPL-0035]  _8615_
+[INFO DPL-0035]  _8615_
+[INFO DPL-0035]  _8699_
+[INFO DPL-0035]  _8699_
+[INFO DPL-0035]  _8699_
+[INFO DPL-0035]  _8749_
+[INFO DPL-0035]  _8749_
+[INFO DPL-0035]  _8944_
+[INFO DPL-0035]  _9022_
+[INFO DPL-0035]  _5326_
+[INFO DPL-0035]  _5326_
+[INFO DPL-0035]  _5326_
+[INFO DPL-0035]  _5410_
+[INFO DPL-0035]  _5416_
+[INFO DPL-0035]  _5416_
+[INFO DPL-0035]  _5418_
+[INFO DPL-0035]  _5418_
+[INFO DPL-0035]  _5418_
+[INFO DPL-0035]  _5462_
+[INFO DPL-0035]  _5462_
+[INFO DPL-0035]  _5516_
+[INFO DPL-0035]  _5516_
+[INFO DPL-0035]  _5516_
+[INFO DPL-0035]  _5545_
+[INFO DPL-0035]  _5545_
+[INFO DPL-0035]  _5551_
+[INFO DPL-0035]  _5551_
+[INFO DPL-0035]  _5583_
+[INFO DPL-0035]  _5647_
+[INFO DPL-0035]  _5647_
+[INFO DPL-0035]  _5647_
+[INFO DPL-0035]  _5647_
+[INFO DPL-0035]  _5647_
+[INFO DPL-0035]  _5703_
+[INFO DPL-0035]  _5743_
+[INFO DPL-0035]  _5743_
+[INFO DPL-0035]  _5754_
+[INFO DPL-0035]  _5754_
+[INFO DPL-0035]  _5761_
+[INFO DPL-0035]  _5761_
+[INFO DPL-0035]  _5761_
+[INFO DPL-0035]  _5805_
+[INFO DPL-0035]  _5805_
+[INFO DPL-0035]  _5846_
+[INFO DPL-0035]  _5870_
+[INFO DPL-0035]  _5870_
+[INFO DPL-0035]  _5919_
+[INFO DPL-0035]  _5919_
+[INFO DPL-0035]  _5964_
+[INFO DPL-0035]  _5964_
+[INFO DPL-0035]  _6045_
+[INFO DPL-0035]  _6045_
+[INFO DPL-0035]  _6089_
+[INFO DPL-0035]  _6089_
+[INFO DPL-0035]  _6090_
+[INFO DPL-0035]  _6090_
+[INFO DPL-0035]  _6175_
+[INFO DPL-0035]  _6175_
+[INFO DPL-0035]  _6249_
+[INFO DPL-0035]  _6266_
+[INFO DPL-0035]  _6371_
+[INFO DPL-0035]  _6371_
+[INFO DPL-0035]  _6449_
+[INFO DPL-0035]  _6449_
+[INFO DPL-0035]  _6449_
+[INFO DPL-0035]  _6586_
+[INFO DPL-0035]  _6586_
+[INFO DPL-0035]  _6586_
+[INFO DPL-0035]  _6609_
+[INFO DPL-0035]  _6612_
+[INFO DPL-0035]  _6612_
+[INFO DPL-0035]  _6625_
+[INFO DPL-0035]  _6698_
+[INFO DPL-0035]  _6698_
+[INFO DPL-0035]  _6707_
+[INFO DPL-0035]  _6707_
+[INFO DPL-0035]  _6775_
+[INFO DPL-0035]  _6813_
+[INFO DPL-0035]  _6813_
+[INFO DPL-0035]  _6813_
+[INFO DPL-0035]  _6855_
+[INFO DPL-0035]  _6855_
+[INFO DPL-0035]  _6855_
+[INFO DPL-0035]  _6921_
+[INFO DPL-0035]  _6921_
+[INFO DPL-0035]  _6929_
+[INFO DPL-0035]  _6939_
+[INFO DPL-0035]  _6939_
+[INFO DPL-0035]  _6995_
+[INFO DPL-0035]  _6995_
+[INFO DPL-0035]  _7042_
+[INFO DPL-0035]  _7048_
+[INFO DPL-0035]  _7048_
+[INFO DPL-0035]  _7048_
+[INFO DPL-0035]  _7109_
+[INFO DPL-0035]  _7109_
+[INFO DPL-0035]  _7182_
+[INFO DPL-0035]  _7182_
+[INFO DPL-0035]  _7184_
+[INFO DPL-0035]  _7261_
+[INFO DPL-0035]  _7261_
+[INFO DPL-0035] message limit reached, this message will no longer print
+[ERROR DPL-0036] Detailed placement failed.
+Error: resizer.tcl, 79 DPL-0036

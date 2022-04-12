@@ -1,0 +1,146 @@
+Tue Apr 05 08:50:19 UTC 2022 - Executing "/openlane/scripts/mergeLef.py -i /home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef /home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -o /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/merged_unpadded.lef |& tee /dev/null"
+
+Tue Apr 05 08:50:20 UTC 2022 - Executing "openroad -python /openlane/scripts/mergeLib.py --output /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/synthesis/merged.lib --name sky130A_merged /home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Tue Apr 05 08:50:20 UTC 2022 - Executing "openroad -python /openlane/scripts/libtrim.py --cell-file /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/synthesis/trimmed.lib.exclude.list --output /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/synthesis/trimmed.lib /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/synthesis/merged.lib"
+
+Tue Apr 05 08:50:21 UTC 2022 - Executing "echo {openlane 00da77e58c86a2fa745dafc2f4b277191cb8d3ac} > /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/OPENLANE_VERSION"
+
+Tue Apr 05 08:50:21 UTC 2022 - Executing "openroad -python /openlane/scripts/new_tracks.py -i /home/adithi/OpenLane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/routing/config.tracks"
+
+Tue Apr 05 08:50:21 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Tue Apr 05 08:50:21 UTC 2022 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl -l /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/synthesis/1-synthesis.log |& tee /dev/null"
+
+Tue Apr 05 08:50:37 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.05_08.50.19\/results\/synthesis\/MULTI_32bit.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/config.tcl"
+
+Tue Apr 05 08:50:37 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/config.tcl"
+
+Tue Apr 05 08:50:37 UTC 2022 - Executing "sed -i /defparam/d /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/results/synthesis/MULTI_32bit.v"
+
+Tue Apr 05 08:50:37 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta.tcl"
+
+Tue Apr 05 08:50:39 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/floorplan.tcl"
+
+Tue Apr 05 08:50:39 UTC 2022 - Executing "openroad -python /openlane/scripts/defutil.py extract_core_dims --output-data /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/dimensions.txt --input-lef /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/merged.lef /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/floorplan/3-initial_fp.def"
+
+Tue Apr 05 08:50:40 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/ioplacer.tcl"
+
+Tue Apr 05 08:50:40 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/tapcell.tcl"
+
+Tue Apr 05 08:50:41 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/pdn.tcl"
+
+Tue Apr 05 08:50:42 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/replace.tcl"
+
+Tue Apr 05 08:50:46 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/resizer.tcl"
+
+Tue Apr 05 08:50:51 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Tue Apr 05 08:50:51 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.05_08.50.19\/results\/placement\/MULTI_32bit.resized.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/config.tcl"
+
+Tue Apr 05 08:50:51 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.05_08.50.19\/results\/synthesis\/MULTI_32bit.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/config.tcl"
+
+Tue Apr 05 08:50:51 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/opendp.tcl"
+
+Tue Apr 05 08:50:52 UTC 2022 - Executing "openroad -python /openlane/scripts/libtrim.py --cell-file /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/cts/cts.lib.exclude.list --output /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/cts/cts.lib /home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Tue Apr 05 08:50:52 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/cts.tcl"
+
+Tue Apr 05 08:51:34 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Tue Apr 05 08:51:35 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.05_08.50.19\/results\/cts\/MULTI_32bit.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/config.tcl"
+
+Tue Apr 05 08:51:35 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.05_08.50.19\/results\/placement\/MULTI_32bit.resized.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/config.tcl"
+
+Tue Apr 05 08:51:35 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/resizer_timing.tcl"
+
+Tue Apr 05 08:51:38 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Tue Apr 05 08:51:38 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.05_08.50.19\/results\/cts\/MULTI_32bit.resized.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/config.tcl"
+
+Tue Apr 05 08:51:38 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.05_08.50.19\/results\/cts\/MULTI_32bit.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/config.tcl"
+
+Tue Apr 05 08:51:38 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/opendp.tcl"
+
+Tue Apr 05 08:51:39 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/groute.tcl"
+
+Tue Apr 05 08:51:43 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/fill.tcl"
+
+Tue Apr 05 08:51:44 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Tue Apr 05 08:51:44 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.05_08.50.19\/tmp\/routing\/17-global.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/config.tcl"
+
+Tue Apr 05 08:51:44 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.05_08.50.19\/results\/cts\/MULTI_32bit.resized.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/config.tcl"
+
+Tue Apr 05 08:51:44 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/droute.tcl"
+
+Tue Apr 05 09:02:35 UTC 2022 - Executing "openroad -python /openlane/scripts/tr_drc_to_klayout_drc.py -i /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/routing/detailed.drc -o /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/routing/detailed.klayout.xml --design-name MULTI_32bit"
+
+Tue Apr 05 09:02:35 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Tue Apr 05 09:02:36 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.05_08.50.19\/tmp\/routing\/19-detailed.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/config.tcl"
+
+Tue Apr 05 09:02:36 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.05_08.50.19\/tmp\/routing\/17-global.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/config.tcl"
+
+Tue Apr 05 09:02:36 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl"
+
+Tue Apr 05 09:02:39 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl"
+
+Tue Apr 05 09:02:42 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl"
+
+Tue Apr 05 09:02:46 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta.tcl"
+
+Tue Apr 05 09:02:49 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta_multi_corner.tcl"
+
+Tue Apr 05 09:02:56 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/adithi/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/mag_gds.tcl </dev/null |& tee /dev/null /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/finishing/26-gdsii.log"
+
+Tue Apr 05 09:03:00 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/adithi/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/gds_pointers.tcl </dev/null |& tee /dev/null /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/finishing/26-gds_ptrs.log"
+
+Tue Apr 05 09:03:03 UTC 2022 - Executing "sed -i -n {/^<< properties >>/,/^<< end >>/p} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/finishing/gds_ptrs.mag"
+
+Tue Apr 05 09:03:03 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/adithi/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/lef.tcl </dev/null |& tee /dev/null /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/finishing/26-lef.log"
+
+Tue Apr 05 09:03:07 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/adithi/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/maglef.tcl </dev/null |& tee /dev/null /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/finishing/26-maglef.log"
+
+Tue Apr 05 09:03:07 UTC 2022 - Executing "klayout -b -rm /openlane/scripts/klayout/def2gds.py -rd out_gds=/openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/results/finishing/MULTI_32bit.klayout.gds -rd tech_file=/home/adithi/OpenLane/pdks/sky130A/libs.tech/klayout/sky130A.lyt -rd design_name=MULTI_32bit -rd in_def=/openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/results/routing/MULTI_32bit.def -rd {in_gds=/home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds } -rd config_file= -rd seal_gds= -rd lef_file=/openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/merged.lef |& tee /dev/null /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/finishing/27-gdsii-klayout.log"
+
+Tue Apr 05 09:03:09 UTC 2022 - Executing "bash /openlane/scripts/klayout/xor.sh /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/results/finishing/MULTI_32bit.gds /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/results/finishing/MULTI_32bit.klayout.gds MULTI_32bit /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/finishing/MULTI_32bit.xor.gds |& tee /dev/null /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/finishing/28-xor.log"
+
+Tue Apr 05 09:03:17 UTC 2022 - Executing "openroad -python /openlane/scripts/parse_klayout_xor_log.py -l /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/finishing/28-xor.log -o /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/finishing/28-xor.rpt"
+
+Tue Apr 05 09:03:17 UTC 2022 - Executing "bash /openlane/scripts/klayout/xor.sh /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/results/finishing/MULTI_32bit.gds /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/results/finishing/MULTI_32bit.klayout.gds MULTI_32bit /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/finishing/MULTI_32bit.xor.xml |& tee /dev/null /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/finishing/28-xor.log"
+
+Tue Apr 05 09:03:26 UTC 2022 - Executing "openroad -python /openlane/scripts/parse_klayout_xor_log.py -l /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/finishing/28-xor.log -o /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/finishing/28-xor.rpt"
+
+Tue Apr 05 09:03:27 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/adithi/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/finishing/spice.tcl </dev/null |& tee /dev/null /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/finishing/29-spice.log"
+
+Tue Apr 05 09:03:37 UTC 2022 - Executing "openroad -python /openlane/scripts/write_powered_def.py -d /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/results/routing/MULTI_32bit.def -l /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/merged.lef --power-port VPWR --ground-port VGND --powered-netlist {} -o /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/finishing/29-powered_def.def |& tee /dev/null /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/finishing/30-write_powered_def.log"
+
+Tue Apr 05 09:03:38 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Tue Apr 05 09:03:39 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.05_08.50.19\/tmp\/finishing\/29-powered_netlist.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/config.tcl"
+
+Tue Apr 05 09:03:39 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openlane\/designs\/MULTI_32bit\/runs\/RUN_2022.04.05_08.50.19\/tmp\/routing\/19-detailed.v/} /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/config.tcl"
+
+Tue Apr 05 09:03:39 UTC 2022 - Executing "netgen -batch source /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/finishing/32-setup_file.lef.lvs |& tee /dev/null /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/finishing/32-lef.log"
+
+Tue Apr 05 09:03:40 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/adithi/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/drc.tcl </dev/null |& tee /dev/null /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/finishing/33-drc.log"
+
+Tue Apr 05 09:04:17 UTC 2022 - Executing "openroad -python /openlane/scripts/magic_drc_to_tcl.py -i /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/finishing/drc.rpt -o /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/finishing/drc.tcl"
+
+Tue Apr 05 09:04:17 UTC 2022 - Executing "openroad -python /openlane/scripts/magic_drc_to_tr_drc.py -i /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/finishing/drc.rpt -o /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/finishing/drc.tr"
+
+Tue Apr 05 09:04:17 UTC 2022 - Executing "openroad -python /openlane/scripts/tr_drc_to_klayout_drc.py -i /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/finishing/drc.tr -o /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/finishing/drc.klayout.xml --design-name MULTI_32bit"
+
+Tue Apr 05 09:04:17 UTC 2022 - Executing "openroad -python /openlane/scripts/magic_drc_to_rdb.py --magic_drc_in /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/finishing/drc.rpt --rdb_out /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/finishing/drc.rdb"
+
+Tue Apr 05 09:04:18 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/antenna_check.tcl"
+
+Tue Apr 05 09:04:19 UTC 2022 - Executing "awk -v vdd=VPWR -v gnd=VGND -f /openlane/scripts/cvc/sky130A/power.awk /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/finishing/29-powered_netlist.v > /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/finishing/MULTI_32bit.power"
+
+Tue Apr 05 09:04:19 UTC 2022 - Executing "awk -f /openlane/scripts/cvc/sky130A/cdl.awk /home/adithi/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/results/finishing/MULTI_32bit.lef.spice > /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/tmp/finishing/MULTI_32bit.cdl"
+
+Tue Apr 05 09:04:19 UTC 2022 - Executing "cvc /openlane/scripts/cvc/sky130A/cvcrc.sky130A |& tee /dev/null /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/logs/finishing/35-erc_screen.log"
+
+Tue Apr 05 09:04:20 UTC 2022 - Executing "openroad -python /openlane/scripts/generate_reports.py -d /openlane/designs/MULTI_32bit --design_name MULTI_32bit --tag RUN_2022.04.05_08.50.19 --output_file /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/final_summary_report.csv --man_report /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19/reports/manufacturability_report.rpt --run_path /openlane/designs/MULTI_32bit/runs/RUN_2022.04.05_08.50.19"
+

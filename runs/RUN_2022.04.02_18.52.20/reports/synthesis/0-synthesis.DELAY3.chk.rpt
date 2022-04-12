@@ -1,0 +1,36 @@
+
+50. Executing CHECK pass (checking for obvious problems).
+Checking module MULTI_32bit...
+Warning: Wire MULTI_32bit.\F [31] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [30] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [29] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [28] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [27] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [26] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [25] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [24] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [23] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [22] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [21] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [20] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [19] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [18] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [17] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [16] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [15] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [14] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [13] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [12] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [11] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [10] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [9] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [8] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [7] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [6] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [5] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [4] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [3] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [2] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [1] is used but has no driver.
+Warning: Wire MULTI_32bit.\F [0] is used but has no driver.
+Found and reported 32 problems.
